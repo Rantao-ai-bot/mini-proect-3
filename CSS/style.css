@@ -6,3 +6,31 @@ line-height: normal;
 letter-spacing: 0.78px;
 }
 
+.heading-list {
+    width: 281.0px;
+height: 16.0px;
+}
+
+.heading-item {
+    color: #2196F3;
+}
+.hero-title {
+    flex-shrink: 0;
+color: #FFF;
+text-align: center;
+font-size: 44px;
+font-weight: 900;
+line-height: 60px;
+letter-spacing: 2.64px;
+text-transform: uppercase;
+}
+
+.hero-button {
+    color: #FFF;
+background-color: #2196F3;
+text-align: center;
+font-size: 16px;
+font-weight: 700;
+line-height: 30px;
+letter-spacing: 0.96px;
+}
