@@ -1,36 +1,55 @@
-.heading {
-    color: #000;
-font-size: 26px;
-font-weight: 700;
-line-height: normal;
-letter-spacing: 0.78px;
+/* ТЕКСТ В HEADER */
+.heading-logo {
+  color: black;
+  text-decoration: none;
 }
 
-.heading-list {
-    width: 281.0px;
-height: 16.0px;
+.heading-link {
+  color: black;
+  text-decoration: none;
 }
 
-.heading-item {
-    color: #2196F3;
-}
+/* HERO */
 .hero-title {
-    flex-shrink: 0;
-color: #FFF;
-text-align: center;
-font-size: 44px;
-font-weight: 900;
-line-height: 60px;
-letter-spacing: 2.64px;
-text-transform: uppercase;
+  color: black;
 }
 
 .hero-button {
-    color: #FFF;
-background-color: #2196F3;
-text-align: center;
-font-size: 16px;
-font-weight: 700;
-line-height: 30px;
-letter-spacing: 0.96px;
+  color: black;
+}
+
+/* ADVANTAGES */
+.advantages-title {
+  color: black;
+}
+
+.advantages-text {
+  color: black;
+}
+
+/* SERVICES */
+.Perspectief-title {
+  color: black;
+}
+
+/* TEAM */
+.Team-title {
+  color: black;
+}
+
+.Team-desc {
+  color: black;
+}
+
+/* FOOTER */
+.footer-link {
+  color: black;
+  text-decoration: none;
+}
+
+.footer-address,
+.footer-mail,
+.footer-tel {
+  color: black;
+  text-decoration: none;
 }
