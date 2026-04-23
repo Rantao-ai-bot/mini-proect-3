@@ -1,3 +1,12 @@
+.roboto-uniquifier {
+  font-family: "Roboto", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+}
+
 /* ТЕКСТ В HEADER */
 .heading-span {
   color: #2196F3;
@@ -227,17 +236,150 @@ height: 260.0px;
 background: url(<path-to-image>) lightgray -86.437px -3.457px / 196.208% 136.002% no-repeat;
 }
 
-.Team-
+.Team-title2 {
+  color: #212121;
+text-align: center;
+font-family: Roboto;
+font-size: 16px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+letter-spacing: 0.48px;
+}
+
+.Team-text1 {
+  color: #757575;
+text-align: center;
+font-family: Roboto;
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+letter-spacing: 0.48px;
+}
+
+.Team-photo2 {
+  width: 270.0px;
+height: 260.0px;
+background: url(<path-to-image>) lightgray -40.687px -0.224px / 175.271% 121.356% no-repeat;
+}
+
+.Team-title3 {
+  color: #212121;
+text-align: center;
+font-family: Roboto;
+font-size: 16px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+letter-spacing: 0.48px;
+}
+
+.Team-text2 {
+  color: #757575;
+text-align: center;
+font-family: Roboto;
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+letter-spacing: 0.48px;
+}
+
+.Team-photo3 {
+  width: 270.0px;
+height: 260.0px;
+background: url(<path-to-image>) lightgray -227.68px -8.844px / 193.508% 134.131% no-repeat;
+}
+
+.Team-title4 {
+  color: #212121;
+text-align: center;
+font-family: Roboto;
+font-size: 16px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+letter-spacing: 0.48px;
+}
+
+.Team-text3 {
+  color: #757575;
+text-align: center;
+font-family: Roboto;
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+letter-spacing: 0.48px;
+}
+
+.Team-photo4 {
+  width: 270.0px;
+height: 260.0px;
+background: url(<path-to-image>) lightgray -74.896px 0px / 152.119% 105.326% no-repeat;
+}
+
+.Team-title5 {
+  color: #212121;
+text-align: center;
+font-family: Roboto;
+font-size: 16px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+letter-spacing: 0.48px;
+}
+
+.Team-text4 {
+  color: #757575;
+text-align: center;
+font-family: Roboto;
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+letter-spacing: 0.48px;
+}
 
 /* FOOTER */
-.footer-link {
-  color: black;
-  text-decoration: none;
-}
+ .footer-link {
+  color: #FFF;
+font-family: Raleway;
+font-size: 26px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+letter-spacing: 0.78px;
+ }
 
-.footer-address,
-.footer-mail,
-.footer-tel {
-  color: black;
-  text-decoration: none;
-}
+ .footer-address {
+  color: #FFF;
+font-family: Roboto;
+font-size: 14px;
+font-style: normal;
+font-weight: 400;
+line-height: 24px;
+letter-spacing: 0.42px;
+ }
+
+ .footer-mail {
+  color: rgba(255, 255, 255, 0.60);
+font-family: Roboto;
+font-size: 14px;
+font-style: normal;
+font-weight: 400;
+line-height: 24px;
+letter-spacing: 0.42px;
+ }
+
+ .footer-tel {
+  color: rgba(255, 255, 255, 0.60);
+font-family: Roboto;
+font-size: 14px;
+font-style: normal;
+font-weight: 400;
+line-height: 24px;
+letter-spacing: 0.42px;
+
+ }
