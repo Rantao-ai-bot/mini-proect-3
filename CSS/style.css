@@ -111,22 +111,123 @@ font-style: normal;
 font-weight: 400;
 line-height: 24px;
 letter-spacing: 0.42px;
+}
 
+/* Pynkts */
+.pynkt-tittle {
+  color: #212121;
+font-family: Roboto;
+font-size: 14px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+letter-spacing: 0.42px;
+text-transform: uppercase;
+}
+
+.pynkt-text {
+color: #757575;
+font-family: Roboto;
+font-size: 14px;
+font-style: normal;
+font-weight: 400;
+line-height: 24px;
+letter-spacing: 0.42px;
+}
+
+/* Plans */
+.plan-title {
+  color: #212121;
+font-family: Roboto;
+font-size: 14px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+letter-spacing: 0.42px;
+text-transform: uppercase;
+}
+
+.plan-text {
+  color: #757575;
+font-family: Roboto;
+font-size: 14px;
+font-style: normal;
+font-weight: 400;
+line-height: 24px;
+letter-spacing: 0.42px;
+}
+
+/* Texnologios */
+.texno-title {
+  color: #212121;
+font-family: Roboto;
+font-size: 14px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+letter-spacing: 0.42px;
+text-transform: uppercase;
+}
+
+.texno-text {
+  color: #757575;
+font-family: Roboto;
+font-size: 14px;
+font-style: normal;
+font-weight: 400;
+line-height: 24px;
+letter-spacing: 0.42px;
 }
 
 /* SERVICES */
 .Perspectief-title {
-  color: black;
+  color: #212121;
+text-align: center;
+font-family: Roboto;
+font-size: 36px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+letter-spacing: 1.08px;
 }
+
+.Perspectief-photo1 {
+  width: 370.0px;
+height: 294.0px;
+}
+
+.Perspectief-photo2 {
+  width: 370.0px;
+height: 294.0px;
+filter: drop-shadow(0 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+.Perspectief-photo3 {
+  width: 370.0px;
+height: 294.0px;
+}
+
+
 
 /* TEAM */
 .Team-title {
-  color: black;
+  color: #212121;
+text-align: center;
+font-family: Roboto;
+font-size: 36px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+letter-spacing: 1.08px;
 }
 
-.Team-desc {
-  color: black;
+.Team-photo1 {
+  width: 270.0px;
+height: 260.0px;
+background: url(<path-to-image>) lightgray -86.437px -3.457px / 196.208% 136.002% no-repeat;
 }
+
+.Team-
 
 /* FOOTER */
 .footer-link {
