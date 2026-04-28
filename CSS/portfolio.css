@@ -8,6 +8,13 @@
     "wdth" 100;
 }
 
+.raleway-uniquifier> {
+  font-family: "Raleway", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+}
+
 /* ТЕКСТ В HEADER */
 .heading-span {
   color: #2196F3;
