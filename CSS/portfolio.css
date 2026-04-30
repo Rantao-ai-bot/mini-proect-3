@@ -115,31 +115,38 @@ margin-bottom: 50px;
      color: #2196F3;
 }
 
+.hero-spisok {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 22px;
+}
 
-/* Section-all */
-.all-photo1 {
+.hero-photo {
     width: 370.0px;
 height: 294.0px;
 background: url(<path-to-image>) lightgray 50% / cover no-repeat;
+margin-bottom: 20px;
+margin-top: 34px;
 }
 
-.all-title1 {
+.hero-title {
     color: #212121;
 font-family: Roboto;
 font-size: 18px;
 font-style: normal;
 font-weight: 700;
-line-height: 36px;
+line-height: 2px;
 letter-spacing: 1.08px;
+margin-bottom: 4px;
 }
 
-.all-text1 {
+.hero-text {
     color: #757575;
 font-family: Roboto;
 font-size: 16px;
 font-style: normal;
 font-weight: 400;
-line-height: 30px;
+line-height: 1.88px;
 letter-spacing: 0.48px;
 }
 
