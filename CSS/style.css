@@ -152,12 +152,12 @@ letter-spacing: 0.42px;
 
 /* SERVICES */
 .perspectief {
-  padding-top: 94px;
   padding-bottom: 94px;
 }
 
 .perspectief-list {
   display: flex;
+  gap: 30px;
 }
 
 .perspectief-title {
@@ -173,15 +173,12 @@ margin-bottom: 30px;
 .perspectief-photo {
   width: 370.0px;
 height: 294.0px;
-
 }
 
 /* TEAM */
 .team {
-margin-top: 186px;
 margin-bottom: 94px;
-margin-left: 215px;
-margin-right: 215px;
+ background-color: #F5F4FA;
 }
 
 .team-list {
@@ -201,7 +198,6 @@ letter-spacing: 1.08px;
 .team-photo {
   width: 270.0px;
 height: 260.0px;
-background: url(<path-to-image>) lightgray -86.437px -3.457px / 196.208% 136.002% no-repeat;
 }
 
 .team-title {
