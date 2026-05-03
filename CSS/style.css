@@ -29,6 +29,7 @@ body {
 }
 
 .heading {
+   padding-top: 24px;
   padding-bottom: 25px;
 }
 
@@ -177,7 +178,8 @@ height: 294.0px;
 
 /* TEAM */
 .team {
-margin-bottom: 94px;
+  padding-top: 94px;
+  padding-bottom: 94px;
  background-color: #F5F4FA;
 }
 
@@ -220,7 +222,7 @@ letter-spacing: 0.48px;
 
 /* FOOTER */
 .footer {
-  margin-top: 94px;
+  padding-top: 6px;
    background-color : #2F303A;
 }
 
