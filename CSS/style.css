@@ -110,7 +110,6 @@ color: var(--only-color);
 text-align: center;
 font-size: 44px;
 font-weight: 900;
-line-height: 1.36px;
 letter-spacing: 2.64px;
 text-transform: uppercase;
 width: 696px;
@@ -198,6 +197,12 @@ height: 294.0px;
   gap: 30px;
 }
 
+.team-div {
+   background-color: var(--only-color);
+  padding-top: 30px;
+padding-bottom: 30px;
+}
+
 .team-detitle {
   color: var(--main-color);
 text-align: center;
@@ -219,6 +224,7 @@ font-size: 16px;
 font-weight: 500;
 line-height: 1.19;
 letter-spacing: 0.48px;
+margin-bottom: 10px;
 }
 
 .team-text {
@@ -232,7 +238,8 @@ letter-spacing: 0.48px;
 
 /* FOOTER */
 .footer {
-  padding-top: 6px;
+  padding-top: 60px;
+  padding-bottom: 60px;
    background-color : var(--bg-color);
 }
 
