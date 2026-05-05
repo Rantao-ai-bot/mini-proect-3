@@ -177,7 +177,7 @@ font-size: 36px;
 font-weight: 700;
 line-height: normal;
 letter-spacing: 1.08px;
-margin-bottom: 30px;
+margin-bottom: 50px;
 }
 
 .perspectief-photo {
@@ -210,6 +210,7 @@ font-size: 36px;
 font-weight: 700;
 line-height: 1.17;
 letter-spacing: 1.08px;
+margin-bottom: 50px;
 }
 
 .team-photo {
@@ -248,6 +249,7 @@ letter-spacing: 0.48px;
 }
 
  .footer-link {
+  display: inline-block;
   color: var(--only-color);
 font-size: 26px;
 font-weight: 700;
@@ -257,10 +259,11 @@ margin-bottom: 20px;
  }
 
  .footer-contact {
+  display: inline-block;
   color: var(--only-color);
 font-size: 14px;
 font-weight: 400;
 line-height: 1.71;
 letter-spacing: 0.42px;
-margin-bottom: 9px;
+margin-bottom: 10px;
  }     
