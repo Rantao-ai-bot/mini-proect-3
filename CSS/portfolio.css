@@ -97,7 +97,7 @@ padding-bottom: 94px;
     display: flex;
     gap: 8px;
     justify-content: center;
-    padding-bottom: 50px;
+    margin-bottom: 50px;
 }
 
 .hero-button {
@@ -107,36 +107,39 @@ font-size: 16px;
 font-weight: 500;
 line-height: 1.63;
 letter-spacing: 0.48px;
-text-transform: uppercase;
 border-radius: 4px;
 background: #F5F4FA;
 }
 
+.hero-span {
+font-size: 16px;
+padding: 6 25 6 25;
+}
+
 .hero-button:hover {
-     color: #2196F3;
+    background-color: #2196F3;
+    color: #FFF;
 }
 
 .hero-spisok {
     display: flex;
     flex-wrap: wrap;
-    gap: 22px;
+    gap: 30px;
 }
 
 .item {
-    border: 1px solid #EEE;
+    outline: 1px solid #EEE;
 background: #FFF;
+width: 370px;
 }
 
 .hero-photo {
     width: 370.0px;
 height: 294.0px;
-background: url(<path-to-image>) lightgray 50% / cover no-repeat;
-margin-bottom: 20px;
-margin-top: 34px;
 }
 
 .hero-bg {
-margin: 20px 24px 20px 24px ;
+padding: 20px 24px 20px 24px ;
 }
 
 .all-title {
@@ -145,7 +148,7 @@ font-size: 18px;
 font-weight: 700;
 line-height: 2;
 letter-spacing: 1.08px;
-margin-bottom: 18px;
+margin-bottom: 4px;
 }
 
 .all-text {
@@ -154,7 +157,6 @@ font-size: 16px;
 font-weight: 400;
 line-height: 1.88px;
 letter-spacing: 0.48px;
-margin-bottom: 20px;
 margin-top: 4px;
 }
 
