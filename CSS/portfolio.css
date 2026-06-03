@@ -38,7 +38,7 @@ body {
 }
 
 .heading-logo {
- color: var(--logo-color);
+ color: #000000;
 font-family: Raleway;
 font-size: 26px;
 font-weight: 700;
@@ -48,7 +48,7 @@ margin-right: 93px;
 }
 
 .heading-span {
-  color: var(--link-color);
+  color: #2196F3;
 }
 
 .heading-list {
@@ -58,7 +58,7 @@ margin-right: 93px;
 
 .heading-link {
   position: relative;
-  color: var(--main-color);
+  color: #212121;
    font-size: 14px;
     font-weight: 500;
      line-height: 1.14;
@@ -72,7 +72,7 @@ margin-right: 93px;
   bottom: -11px;
   width: 100%;
   height: 4px;
-  background-color: var(--link-color);
+  background-color: #2196F3;
   border-radius: 2px;
   opacity: 0;
   transition: opacity 250ms;
@@ -83,7 +83,7 @@ margin-right: 93px;
 }
 
 .heading-link:hover {
-  color: var(--link-color);
+  color: #2196F3;
 }
 
 .heading-spisok {
@@ -93,7 +93,7 @@ margin-right: 93px;
 }
 
 .heading-adress {
-  color: var(--text-color);
+  color: #757575;
 font-size: 14px;
 font-weight: 500;
 line-height: 1.14;
@@ -101,7 +101,7 @@ letter-spacing: 0.28px;
 }
 
 .heading-adress:hover {
-  color: var(--link-color);
+  color: #2196F3;
 }
 
 
@@ -149,6 +149,35 @@ padding: 6 25 6 25;
     outline: 1px solid #EEE;
 background: #FFF;
 width: 370px;
+}
+
+.overlay-box {
+    position: relative;
+    overflow: hidden;
+}
+
+.overlay-text {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+
+    padding: 40px 24px;
+
+    background-color: rgba(33, 150, 243, 0.9);
+    color: #FFFFFF;
+
+    font-size: 20px;
+    line-height: 1.5;
+
+    transform: translateY(100%);
+    transition: transform 250ms ease;
+}
+
+.item:hover .overlay-text {
+    transform: translateY(0);
 }
 
 .hero-photo {
