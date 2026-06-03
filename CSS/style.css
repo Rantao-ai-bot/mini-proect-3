@@ -69,27 +69,33 @@ margin-right: 93px;
 }
 
 .heading-link {
-color:  var(--main-color);
-font-size: 14px;
-font-weight: 500;
-line-height: 1.14;
-letter-spacing: 0.28px;
+  position: relative;
+  color: var(--main-color);
+   font-size: 14px;
+    font-weight: 500;
+     line-height: 1.14;
+      letter-spacing: 0.28px;
 }
 
-.heading-link:hover {
-  color: var(--link-color);
-
+.heading-link::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -11px;
+  width: 100%;
+  height: 4px;
+  background-color: var(--link-color);
+  border-radius: 2px;
+  opacity: 0;
+  transition: opacity 250ms;
 }
+
 .heading-link:hover::after {
   opacity: 1;
 }
 
-.heading-link::after{
-  content:"" ;
-  display: block;
-background: var(--link-color);
-position: absolute;
-opacity: 0;
+.heading-link:hover {
+  color: var(--link-color);
 }
 
 .heading-spisok {
