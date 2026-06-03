@@ -78,6 +78,18 @@ letter-spacing: 0.28px;
 
 .heading-link:hover {
   color: var(--link-color);
+
+}
+.heading-link:hover::after {
+  opacity: 1;
+}
+
+.heading-link::after{
+  content:"" ;
+  display: block;
+background: var(--link-color);
+position: absolute;
+opacity: 0;
 }
 
 .heading-spisok {
