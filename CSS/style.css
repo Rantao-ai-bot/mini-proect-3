@@ -306,3 +306,71 @@ font-weight: 400;
 line-height: 24px;
 letter-spacing: 0.42px;
 }
+
+/* ================== ANIMATIONS ================== */
+
+/* Hero title */
+.hero-title {
+    animation: heroTitle 1s ease;
+}
+
+@keyframes heroTitle {
+    0% {
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Logo */
+.heading-logo:hover {
+    animation: logoRotate .7s;
+}
+
+@keyframes logoRotate {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    50% {
+        transform: rotate(8deg);
+    }
+
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+/* Team cards */
+.team-items:hover {
+    animation: teamCard .5s forwards;
+}
+
+@keyframes teamCard {
+    0% {
+        transform: scale(1);
+    }
+
+    100% {
+        transform: scale(1.05);
+    }
+}
+
+/* Portfolio cards */
+.item:hover {
+    animation: portfolioAnim .5s forwards;
+}
+
+@keyframes portfolioAnim {
+    0% {
+        transform: scale(1);
+    }
+
+    100% {
+        transform: scale(1.03);
+    }
+}

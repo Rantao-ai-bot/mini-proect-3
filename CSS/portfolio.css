@@ -257,3 +257,22 @@ font-weight: 400;
 line-height: 24px;
 letter-spacing: 0.42px;
 }
+
+/* Logo */
+.heading-logo:hover {
+    animation: logoRotate .7s;
+}
+
+@keyframes logoRotate {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    50% {
+        transform: rotate(8deg);
+    }
+
+    100% {
+        transform: rotate(0deg);
+    }
+}
