@@ -164,13 +164,15 @@ padding: 10px 32px;
 }
 
 .advantages-list {
-    display: flex;
+    /* display: flex; */
     gap: 30px;
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
+    display: grid;
+    grid-template-columns: 1fr;
 }
 
 .advantages-items {
-    flex: 1;
+  background-color: red;
 }
 
 .advantages-title {
@@ -444,6 +446,9 @@ width: 360px;
      flex-direction: column;
      gap: 10px;
 }
+.advantages-list {
+  grid-template-columns: repeat(2,1fr);
+}
 }
 
 
@@ -487,5 +492,8 @@ width: 696px;
 .advantages {
   padding-top: 94px;
   padding-bottom: 94px;
+}
+.advantages-list {
+   grid-template-columns: repeat(4,1fr);
 }
 }
