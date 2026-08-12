@@ -171,9 +171,6 @@ padding: 10px 32px;
     grid-template-columns: 1fr;
 }
 
-.advantages-items {
-  background-color: red;
-}
 
 .advantages-title {
     margin-bottom: 10px;
@@ -200,6 +197,7 @@ text-transform: uppercase;
 /* SERVICES */
 .perspectief {
   padding-bottom: 94px;
+  display: none;
 }
 
 .perspectief-list {
@@ -224,14 +222,17 @@ height: 294.0px;
 
 /* TEAM */
 .team {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
  background-color: var(--team-color);
 }
 
 .team-list {
-  display: flex;
+  /* display: flex; */
   gap: 30px;
+  /* flex-direction: column; */
+  display: grid;
+  grid-template-columns: 100%;
 }
 
 .team-div {
@@ -250,19 +251,15 @@ letter-spacing: 1.08px;
 margin-bottom: 50px;
 }
 
-.team-photo {
-  width: 270.0px;
-height: 260.0px;
-}
 
 .team-title {
   color: var(--main-color);
 text-align: center;
-font-size: 16px;
+font-size: 28px;
 font-weight: 500;
 line-height: 1.19;
-letter-spacing: 0.48px;
-margin-bottom: 10px;
+letter-spacing: 0.84px;
+margin-bottom: 30px;
 }
 
 .team-text {
@@ -323,6 +320,10 @@ font-size: 14px;
 font-weight: 400;
 line-height: 24px;
 letter-spacing: 0.42px;
+}
+
+.footer-box {
+  text-align: center;
 }
 
 /* ================== ANIMATIONS ================== */
@@ -449,6 +450,10 @@ width: 360px;
 .advantages-list {
   grid-template-columns: repeat(2,1fr);
 }
+
+.team-list {
+  grid-template-columns:repeat(2,1fr) ;
+}
 }
 
 
@@ -495,5 +500,28 @@ width: 696px;
 }
 .advantages-list {
    grid-template-columns: repeat(4,1fr);
+}
+
+.perspectief {
+  display: block;
+}
+
+.team {
+   padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.team-title {
+  margin-bottom: 50px;
+  letter-spacing: 1.08px;
+  font-size: 36px;
+}
+
+.team-list {
+  grid-template-columns: repeat(4,1fr);
+}
+
+.footer-box {
+  text-align: start;
 }
 }
