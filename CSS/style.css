@@ -525,3 +525,109 @@ width: 696px;
   text-align: start;
 }
 }
+
+
+
+/* Портфоліо */
+
+/* Hero */
+.hero {
+padding-top: 94px;
+padding-bottom: 94px;
+}
+
+.hero-list {
+    display: flex;
+    gap: 8px;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+.hero-button {
+    color: #212121;
+text-align: center;
+font-size: 16px;
+font-weight: 500;
+line-height: 1.63;
+letter-spacing: 0.48px;
+border-radius: 4px;
+background: #F5F4FA;
+}
+
+.hero-span {
+font-size: 16px;
+padding: 6 25 6 25;
+}
+
+.hero-button:hover {
+    background-color: #2196F3;
+    color: #FFF;
+}
+
+.hero-spisok {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.item {
+    outline: 1px solid #EEE;
+background: #FFF;
+width: 370px;
+}
+
+.overlay-box {
+    position: relative;
+    overflow: hidden;
+}
+
+.overlay-text {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+
+    padding: 40px 24px;
+
+    background-color: rgba(33, 150, 243, 0.9);
+    color: #FFFFFF;
+
+    font-size: 20px;
+    line-height: 1.5;
+
+    transform: translateY(100%);
+    transition: transform 250ms ease;
+}
+
+.item:hover .overlay-text {
+    transform: translateY(0);
+}
+
+.hero-photo {
+    width: 370.0px;
+height: 294.0px;
+}
+
+.hero-bg {
+padding: 20px 24px 20px 24px ;
+}
+
+.all-title {
+    color: #212121;
+font-size: 18px;
+font-weight: 700;
+line-height: 2;
+letter-spacing: 1.08px;
+margin-bottom: 4px;
+}
+
+.all-text {
+    color: #757575;
+font-size: 16px;
+font-weight: 400;
+line-height: 1.88px;
+letter-spacing: 0.48px;
+margin-top: 4px;
+}
