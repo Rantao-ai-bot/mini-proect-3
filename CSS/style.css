@@ -531,19 +531,19 @@ width: 696px;
 /* Портфоліо */
 
 /* Hero */
-.hero {
+.portfolio {
 padding-top: 94px;
 padding-bottom: 94px;
 }
 
-.hero-list {
+.portfolio-list {
     display: flex;
+    flex-wrap: wrap;
     gap: 8px;
-    justify-content: center;
     margin-bottom: 50px;
 }
 
-.hero-button {
+.portfolio-button {
     color: #212121;
 text-align: center;
 font-size: 16px;
@@ -554,20 +554,21 @@ border-radius: 4px;
 background: #F5F4FA;
 }
 
-.hero-span {
+.portfolio-span {
 font-size: 16px;
-padding: 6 25 6 25;
+padding: 6px 25px;
 }
 
-.hero-button:hover {
+.portfolio-button:hover {
     background-color: #2196F3;
     color: #FFF;
 }
 
-.hero-spisok {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 30px;
+.portfolio-spisok {
+     display: flex;
+        flex-direction: column;
+        gap: 30px;
+        width: 100%;
 }
 
 .item {
@@ -605,12 +606,13 @@ width: 370px;
     transform: translateY(0);
 }
 
-.hero-photo {
-    width: 370.0px;
-height: 294.0px;
+.portfolio-photo {
+  display: block ;
+width: 100%;
+height: auto;
 }
 
-.hero-bg {
+.portfolio-bg {
 padding: 20px 24px 20px 24px ;
 }
 
