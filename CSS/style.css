@@ -530,7 +530,7 @@ width: 696px;
 
 /* Портфоліо */
 
-/* Hero */
+/* portfolio */
 .portfolio {
 padding-top: 94px;
 padding-bottom: 94px;
@@ -552,6 +552,7 @@ line-height: 1.63;
 letter-spacing: 0.48px;
 border-radius: 4px;
 background: #F5F4FA;
+gap: 22px;
 }
 
 .portfolio-span {
@@ -565,16 +566,16 @@ padding: 6px 25px;
 }
 
 .portfolio-spisok {
-     display: flex;
-        flex-direction: column;
-        gap: 30px;
-        width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
 }
+
 
 .item {
     outline: 1px solid #EEE;
 background: #FFF;
-width: 370px;
+width: 100%;
 }
 
 .overlay-box {
@@ -632,4 +633,59 @@ font-weight: 400;
 line-height: 1.88px;
 letter-spacing: 0.48px;
 margin-top: 4px;
+}
+
+
+
+/* МОБІЛКА */
+
+ 
+@media (min-width:480px) {
+   .container{
+  width:480px
+}
+}
+
+
+
+/* ПЛАНШЕТ */
+
+@media (min-width:768px) {
+  .container{
+    width: 768px;
+  }
+
+   .portfolio-list {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    gap: 8px;
+   }
+
+   .portfolio-spisok {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 30px;
+    }
+
+    .item {
+        width: calc(50% - 15px);
+    }
+
+}
+
+
+
+/* ДЕСТОП */
+
+
+@media (min-width:1200px) {
+  .container{
+    width: 1200px;
+  }
+
+   .item {
+        width: calc((100% - 60px) / 3);
+    }
 }
