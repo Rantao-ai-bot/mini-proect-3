@@ -35,7 +35,7 @@
         <section class="hero" >
             <div class="container">
             <h1 class="hero-title" >Ефективні рішення для вашого бізнесу</h1>
-            <button class="hero-button" >Замовити послугу</button>
+            <button data-modal-open class="hero-button" >Замовити послугу</button>
             </div>
         </section>
         <section class="advantages">
@@ -118,5 +118,40 @@
          </div>
         </div>
 </footer>
+<div data-modal class="back-drop is-hidden">
+      <div class="modal">
+        <button data-modal-close class="modal-close">X</button>
+        <form>
+          <label
+            >Ім'я
+            <input type="text" />
+          </label>
+          <label
+            >Телефон
+            <input type="tel" />
+          </label>
+          <label
+            >Пошта
+            <input type="email" />
+          </label>
+          <label
+            >Коментар
+            <textarea placeholder="Введіть текст"></textarea>
+          </label>
+          <label class="checkbox-label">
+            <input type="checkbox" class="checkbox-input" />
+
+            <span class="checkbox-custom"></span>
+
+            Погоджуюся з розсилкою та приймаю Умови договору
+          </label>
+          <label class="btn-label">
+            <button class="btn" type="button">Відправити</button>
+          </label>
+        </form>
+      </div>
+    </div>
+
+    <script type="module" src="./JS/modal.js"></script>
 </body>
 </html>
