@@ -16,21 +16,53 @@
 </head>
 <body>
     <header class="heading">
-        <div class="container">
-        <a class="heading-logo" href="./index.html"><span class="heading-span" >Web</span>Studio</a>
-        <nav class="heading-nav" >
-            <ul class="heading-list">
-                <li class="heading-item"><a class="heading-link" href="./index.html" >Студія</a></li>
-                <li class="heading-item"><a class="heading-link" href="./portfolio/portfolio.html" >Портфоліо</a></li>
-                <li class="heading-item"><a class="heading-link" href="#" >Контакти</a></li>
-                </ul>
-        </nav>
-        <ul class="heading-spisok">
-                <li class="heading-element" ><a class="heading-adress" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-                <li class="heading-element" ><a class="heading-adress" href="tel:+380961111111">+380961111111</a></li>
-        </ul>
-        </div>
-    </header>
+  <div class="container">
+
+    <a class="heading-logo" href="./index.html">
+      <span class="heading-span">Web</span>Studio
+    </a>
+
+    <!-- Кнопка меню -->
+    <button class="mobile-menu-open" type="button" aria-label="Відкрити меню">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+
+    <nav class="heading-nav">
+      <ul class="heading-list">
+        <li class="heading-item">
+          <a class="heading-link" href="./index.html">Студія</a>
+        </li>
+
+        <li class="heading-item">
+          <a class="heading-link" href="./portfolio/portfolio.html">
+            Портфоліо
+          </a>
+        </li>
+
+        <li class="heading-item">
+          <a class="heading-link" href="#">Контакти</a>
+        </li>
+      </ul>
+    </nav>
+
+    <ul class="heading-spisok">
+      <li class="heading-element">
+        <a class="heading-adress" href="mailto:info@devstudio.com">
+          info@devstudio.com
+        </a>
+      </li>
+
+      <li class="heading-element">
+        <a class="heading-adress" href="tel:+380961111111">
+          +380961111111
+        </a>
+      </li>
+    </ul>
+
+  </div>
+</header>
     <main>
         <section class="hero" >
             <div class="container">
@@ -152,6 +184,75 @@
       </div>
     </div>
 
-    <script type="module" src="./JS/modal.js"></script>
+
+      <div class="mobile-menu">
+  <div class="mobile-menu-container">
+
+    <button class="mobile-menu-close" type="button" aria-label="Закрити меню">
+      ×
+    </button>
+
+    <nav class="mobile-nav">
+      <ul class="mobile-nav-list">
+
+        <li class="mobile-nav-item">
+          <a class="mobile-nav-link mobile-nav-link-active" href="./index.html">
+            Студія
+          </a>
+        </li>
+
+        <li class="mobile-nav-item">
+          <a class="mobile-nav-link" href="./portfolio/portfolio.html">
+            Портфоліо
+          </a>
+        </li>
+
+        <li class="mobile-nav-item">
+          <a class="mobile-nav-link" href="#">
+            Контакти
+          </a>
+        </li>
+
+      </ul>
+    </nav>
+
+    <div class="mobile-contacts">
+
+      <a class="mobile-phone" href="tel:+380961111111">
+        +38 096 111 11 11
+      </a>
+
+      <a class="mobile-email" href="mailto:info@devstudio.com">
+        info@devstudio.com
+      </a>
+
+      <ul class="mobile-socials">
+        <li>
+          <a href="#">Instagram</a>
+        </li>
+
+        <li>
+          <a href="#">Twitter</a>
+        </li>
+
+        <li>
+          <a href="#">Facebook</a>
+        </li>
+
+        <li>
+          <a href="#">LinkedIn</a>
+        </li>
+      </ul>
+
+    </div>
+
+  </div>
+</div>
+
+
+
+
+    <script src="./JS/modal.js"></script>
+<script src="./JS/mobile-menu.js"></script>
 </body>
 </html>

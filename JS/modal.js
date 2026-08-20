@@ -13,3 +13,18 @@
     document.body.classList.toggle("no-scroll");
   }
 })();
+
+
+
+
+const openButton = document.querySelector(".mobile-menu-open");
+const mobileMenu = document.querySelector(".mobile-menu");
+const closeButton = document.querySelector(".mobile-menu-close");
+
+openButton.addEventListener("click", function () {
+  mobileMenu.classList.add("is-open");
+});
+
+closeButton.addEventListener("click", function () {
+  mobileMenu.classList.remove("is-open");
+});
