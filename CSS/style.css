@@ -147,14 +147,13 @@ margin-bottom: 30px;
   color: var(--only-color);
 text-align: center;
 font-size: 16px;
-font-weight: 700;
 line-height: 30px;
 letter-spacing: 0.96px;
 border-radius: 4px;
 background: #2196F3;
 box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
-border: none;
 padding: 10px 32px;
+ width: 216px;
 }
 
 /* ADVANTAGES */
@@ -253,12 +252,14 @@ margin-bottom: 50px;
 
 
 .team-title {
-  color: var(--main-color);
+color: #212121;
 text-align: center;
-font-size: 28px;
+font-family: Roboto;
+font-size: 16px;
+font-style: normal;
 font-weight: 500;
-line-height: 1.19;
-letter-spacing: 0.84px;
+line-height: normal;
+letter-spacing: 0.48px;
 margin-bottom: 30px;
 }
 
@@ -433,6 +434,10 @@ width: 360px;
   .mobile-menu-open {
     display: none;
   }
+
+  .hero-button {
+  width: 216px;
+}
 
   .mobile-menu {
     display: none;
