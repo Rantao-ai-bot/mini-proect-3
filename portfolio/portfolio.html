@@ -1,392 +1,455 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="uk">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
     <title>Портфоліо | WebStudio</title>
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 
     <link
-        rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.1/modern-normalize.min.css"
-        integrity="sha512-q6WgHqiHlKyOqslT/lgBgodhd03Wp4BEqKeW6nNtlOY4quzyG3VoQKFrieaCeSnuVseNKRGpGeDU3qPmabCANg=="
-        crossorigin="anonymous"
-        referrerpolicy="no-referrer"
-    >
-    <link rel="stylesheet" href="../CSS/reset.css">
-    <link rel="stylesheet" href="../CSS/style.css">
-</head>
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
 
-<body>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.1/modern-normalize.min.css"
+      integrity="sha512-q6WgHqiHlKyOqslT/lgBgodhd03Wp4BEqKeW6nNtlOY4quzyG3VoQKFrieaCeSnuVseNKRGpGeDU3qPmabCANg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
 
-<header class="heading">
-  <div class="container">
+    <link rel="stylesheet" href="../CSS/reset.css" />
+    <link rel="stylesheet" href="../CSS/style.css" />
+  </head>
 
-    <a class="heading-logo" href="../index.html">
-      <span class="heading-span">Web</span>Studio
-    </a>
-
-    <button
-      class="mobile-menu-open"
-      type="button"
-      aria-label="Відкрити меню"
-    >
-      <span></span>
-      <span></span>
-      <span></span>
-    </button>
-
-    <nav class="heading-nav">
-      <ul class="heading-list">
-
-        <li class="heading-item">
-          <a class="heading-link" href="../index.html">
-            Студія
-          </a>
-        </li>
-
-        <li class="heading-item">
-          <a class="heading-link" href="./portfolio.html">
-            Портфоліо
-          </a>
-        </li>
-
-        <li class="heading-item">
-          <a class="heading-link" href="#">
-            Контакти
-          </a>
-        </li>
-
-      </ul>
-    </nav>
-
-    <ul class="heading-spisok">
-
-      <li class="heading-element">
-        <a
-          class="heading-adress"
-          href="mailto:info@devstudio.com"
-        >
-          info@devstudio.com
+  <body>
+    <header class="heading">
+      <div class="container">
+        <a class="heading-logo" href="../index.html">
+          <span class="heading-span">Web</span>Studio
         </a>
-      </li>
 
-      <li class="heading-element">
-        <a
-          class="heading-adress"
-          href="tel:+380961111111"
+        <button
+          class="mobile-menu-open"
+          type="button"
+          aria-label="Відкрити меню"
         >
-          +380961111111
-        </a>
-      </li>
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
 
-    </ul>
+        <nav class="heading-nav">
+          <ul class="heading-list">
+            <li class="heading-item">
+              <a class="heading-link" href="../index.html"> Студія </a>
+            </li>
 
-  </div>
-</header>
+            <li class="heading-item">
+              <a class="heading-link" href="./portfolio.html"> Портфоліо </a>
+            </li>
 
+            <li class="heading-item">
+              <a class="heading-link" href="#"> Контакти </a>
+            </li>
+          </ul>
+        </nav>
 
-<main>
-
-    <section class="portfolio">
-        <div class="container">
-
-            <ul class="portfolio-list">
-                <li class="portfolio-items">
-                    <button class="portfolio-button" type="button">
-                        <span class="portfolio-span">Усі</span>
-                    </button>
-                </li>
-
-                <li class="portfolio-items">
-                    <button class="portfolio-button" type="button">
-                        <span class="portfolio-span">Веб-сайти</span>
-                    </button>
-                </li>
-
-                <li class="portfolio-items">
-                    <button class="portfolio-button" type="button">
-                        <span class="portfolio-span">Додатки</span>
-                    </button>
-                </li>
-
-                <li class="portfolio-items">
-                    <button class="portfolio-button" type="button">
-                        <span class="portfolio-span">Дизайн</span>
-                    </button>
-                </li>
-
-                <li class="portfolio-items">
-                    <button class="portfolio-button" type="button">
-                        <span class="portfolio-span">Маркетинг</span>
-                    </button>
-                </li>
-            </ul>
-
-
-            <ul class="portfolio-spisok">
-
-                <li class="item">
-                    <div class="overlay-box">
-                        <img src="../pages/img.png" alt="Технокряк" class="portfolio-photo">
-                        <p class="overlay-text">
-                            Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
-                        </p>
-                    </div>
-                    <div class="portfolio-bg">
-                        <h2 class="all-title">Технокряк</h2>
-                        <p class="all-text">Веб-сайт</p>
-                    </div>
-                </li>
-
-
-                <li class="item">
-                    <div class="overlay-box">
-                        <img src="../pages/img-1.png" alt="Постер New Orlean vs Golden Star" class="portfolio-photo">
-                        <p class="overlay-text">
-                            Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
-                        </p>
-                    </div>
-                    <div class="portfolio-bg">
-                        <h2 class="all-title">Постер New Orlean vs Golden Star</h2>
-                        <p class="all-text">Дизайн</p>
-                    </div>
-                </li>
-
-
-                <li class="item">
-                    <div class="overlay-box">
-                        <img src="../pages/img-2.png" alt="Ресторан Seafood" class="portfolio-photo">
-                        <p class="overlay-text">
-                            Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
-                        </p>
-                    </div>
-                    <div class="portfolio-bg">
-                        <h2 class="all-title">Ресторан Seafood</h2>
-                        <p class="all-text">Додаток</p>
-                    </div>
-                </li>
-
-
-                <li class="item">
-                    <div class="overlay-box">
-                        <img src="../pages/box-3.png" alt="Проєкт Prime" class="portfolio-photo">
-                        <p class="overlay-text">
-                            Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
-                        </p>
-                    </div>
-                    <div class="portfolio-bg">
-                        <h2 class="all-title">Проєкт Prime</h2>
-                        <p class="all-text">Маркетинг</p>
-                    </div>
-                </li>
-
-
-                <li class="item">
-                    <div class="overlay-box">
-                        <img src="../pages/img-4.png" alt="Проєкт Boxes" class="portfolio-photo">
-                        <p class="overlay-text">
-                            Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
-                        </p>
-                    </div>
-                    <div class="portfolio-bg">
-                        <h2 class="all-title">Проєкт Boxes</h2>
-                        <p class="all-text">Додаток</p>
-                    </div>
-                </li>
-
-
-                <li class="item">
-                    <div class="overlay-box">
-                        <img src="../pages/img-5.png" alt="Inspiration has no Borders" class="portfolio-photo">
-                        <p class="overlay-text">
-                            Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
-                        </p>
-                    </div>
-                    <div class="portfolio-bg">
-                        <h2 class="all-title">Inspiration has no Borders</h2>
-                        <p class="all-text">Веб-сайт</p>
-                    </div>
-                </li>
-
-
-                <li class="item">
-                    <div class="overlay-box">
-                        <img src="../pages/img-6.png" alt="Видання Limited Edition" class="portfolio-photo">
-                        <p class="overlay-text">
-                            Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
-                        </p>
-                    </div>
-                    <div class="portfolio-bg">
-                        <h2 class="all-title">Видання Limited Edition</h2>
-                        <p class="all-text">Дизайн</p>
-                    </div>
-                </li>
-
-
-                <li class="item">
-                    <div class="overlay-box">
-                        <img src="../pages/img-7.png" alt="Проєкт LAB" class="portfolio-photo">
-                        <p class="overlay-text">
-                            Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
-                        </p>
-                    </div>
-                    <div class="portfolio-bg">
-                        <h2 class="all-title">Проєкт LAB</h2>
-                        <p class="all-text">Маркетинг</p>
-                    </div>
-                </li>
-
-
-                <li class="item">
-                    <div class="overlay-box">
-                        <img src="../pages/img-8.png" alt="Growing Business" class="portfolio-photo">
-                        <p class="overlay-text">
-                            Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
-                        </p>
-                    </div>
-                    <div class="portfolio-bg">
-                        <h2 class="all-title">Growing Business</h2>
-                        <p class="all-text">Додаток</p>
-                    </div>
-                </li>
-
-            </ul>
-
-        </div>
-    </section>
-
-</main>
-
-
-<footer class="footer">
-    <div class="container">
-        <div class="footer-box">
-
-            <a class="footer-link" href="../index.html">
-                <span class="footer-span">Web</span>Studio
+        <ul class="heading-spisok">
+          <li class="heading-element">
+            <a class="heading-adress" href="mailto:info@devstudio.com">
+              info@devstudio.com
             </a>
+          </li>
 
-            <ul class="footer-list">
-                <li class="footer-item">
-                    <a class="footer-contact" href="#">
-                        м. Київ, пр-т Лесі Українки, 26
-                    </a>
-                </li>
+          <li class="heading-element">
+            <a class="heading-adress" href="tel:+380961111111">
+              +380961111111
+            </a>
+          </li>
+        </ul>
+      </div>
+    </header>
 
-                <li class="footer-item">
-                    <a href="mailto:info@devstudio.com" class="footer-contact">
-                        info@devstudio.com
-                    </a>
-                </li>
+    <main>
+      <section class="portfolio">
+        <div class="container">
+          <!-- Кнопки фільтра -->
 
-                <li class="footer-item">
-                    <a href="tel:+380961111111" class="footer-contact">
-                        +380961111111
-                    </a>
-                </li>
-            </ul>
+          <ul class="portfolio-list">
+            <li class="portfolio-items">
+              <button class="portfolio-button" type="button">
+                <span class="portfolio-span"> Усі </span>
+              </button>
+            </li>
 
+            <li class="portfolio-items">
+              <button class="portfolio-button" type="button">
+                <span class="portfolio-span"> Веб-сайти </span>
+              </button>
+            </li>
+
+            <li class="portfolio-items">
+              <button class="portfolio-button" type="button">
+                <span class="portfolio-span"> Додатки </span>
+              </button>
+            </li>
+
+            <li class="portfolio-items">
+              <button class="portfolio-button" type="button">
+                <span class="portfolio-span"> Дизайн </span>
+              </button>
+            </li>
+
+            <li class="portfolio-items">
+              <button class="portfolio-button" type="button">
+                <span class="portfolio-span"> Маркетинг </span>
+              </button>
+            </li>
+          </ul>
+
+          <!-- Портфоліо -->
+
+          <ul class="portfolio-spisok">
+            <li class="item">
+              <div class="overlay-box">
+                <img
+                  src="../pages/img.png"
+                  alt="Технокряк"
+                  class="portfolio-photo"
+                />
+
+                <p class="overlay-text">
+                  Ресурс пропонує комплексні пропозиції з різним рівнем
+                  функціоналу та сервісів.
+                </p>
+              </div>
+
+              <div class="portfolio-bg">
+                <h2 class="all-title">Технокряк</h2>
+
+                <p class="all-text">Веб-сайт</p>
+              </div>
+            </li>
+
+            <li class="item">
+              <div class="overlay-box">
+                <img
+                  src="../pages/img-1.png"
+                  alt="Постер New Orlean vs Golden Star"
+                  class="portfolio-photo"
+                />
+
+                <p class="overlay-text">
+                  Ресурс пропонує комплексні пропозиції з різним рівнем
+                  функціоналу та сервісів.
+                </p>
+              </div>
+
+              <div class="portfolio-bg">
+                <h2 class="all-title">Постер New Orlean vs Golden Star</h2>
+
+                <p class="all-text">Дизайн</p>
+              </div>
+            </li>
+
+            <li class="item">
+              <div class="overlay-box">
+                <img
+                  src="../pages/img-2.png"
+                  alt="Ресторан Seafood"
+                  class="portfolio-photo"
+                />
+
+                <p class="overlay-text">
+                  Ресурс пропонує комплексні пропозиції з різним рівнем
+                  функціоналу та сервісів.
+                </p>
+              </div>
+
+              <div class="portfolio-bg">
+                <h2 class="all-title">Ресторан Seafood</h2>
+
+                <p class="all-text">Додаток</p>
+              </div>
+            </li>
+
+            <li class="item">
+              <div class="overlay-box">
+                <img
+                  src="../pages/box-3.png"
+                  alt="Проєкт Prime"
+                  class="portfolio-photo"
+                />
+
+                <p class="overlay-text">
+                  Ресурс пропонує комплексні пропозиції з різним рівнем
+                  функціоналу та сервісів.
+                </p>
+              </div>
+
+              <div class="portfolio-bg">
+                <h2 class="all-title">Проєкт Prime</h2>
+
+                <p class="all-text">Маркетинг</p>
+              </div>
+            </li>
+
+            <li class="item">
+              <div class="overlay-box">
+                <img
+                  src="../pages/img-4.png"
+                  alt="Проєкт Boxes"
+                  class="portfolio-photo"
+                />
+
+                <p class="overlay-text">
+                  Ресурс пропонує комплексні пропозиції з різним рівнем
+                  функціоналу та сервісів.
+                </p>
+              </div>
+
+              <div class="portfolio-bg">
+                <h2 class="all-title">Проєкт Boxes</h2>
+
+                <p class="all-text">Додаток</p>
+              </div>
+            </li>
+
+            <li class="item">
+              <div class="overlay-box">
+                <img
+                  src="../pages/img-5.png"
+                  alt="Inspiration has no Borders"
+                  class="portfolio-photo"
+                />
+
+                <p class="overlay-text">
+                  Ресурс пропонує комплексні пропозиції з різним рівнем
+                  функціоналу та сервісів.
+                </p>
+              </div>
+
+              <div class="portfolio-bg">
+                <h2 class="all-title">Inspiration has no Borders</h2>
+
+                <p class="all-text">Веб-сайт</p>
+              </div>
+            </li>
+
+            <li class="item">
+              <div class="overlay-box">
+                <img
+                  src="../pages/img-6.png"
+                  alt="Видання Limited Edition"
+                  class="portfolio-photo"
+                />
+
+                <p class="overlay-text">
+                  Ресурс пропонує комплексні пропозиції з різним рівнем
+                  функціоналу та сервісів.
+                </p>
+              </div>
+
+              <div class="portfolio-bg">
+                <h2 class="all-title">Видання Limited Edition</h2>
+
+                <p class="all-text">Дизайн</p>
+              </div>
+            </li>
+
+            <li class="item">
+              <div class="overlay-box">
+                <img
+                  src="../pages/img-7.png"
+                  alt="Проєкт LAB"
+                  class="portfolio-photo"
+                />
+
+                <p class="overlay-text">
+                  Ресурс пропонує комплексні пропозиції з різним рівнем
+                  функціоналу та сервісів.
+                </p>
+              </div>
+
+              <div class="portfolio-bg">
+                <h2 class="all-title">Проєкт LAB</h2>
+
+                <p class="all-text">Маркетинг</p>
+              </div>
+            </li>
+
+            <li class="item">
+              <div class="overlay-box">
+                <img
+                  src="../pages/img-8.png"
+                  alt="Growing Business"
+                  class="portfolio-photo"
+                />
+
+                <p class="overlay-text">
+                  Ресурс пропонує комплексні пропозиції з різним рівнем
+                  функціоналу та сервісів.
+                </p>
+              </div>
+
+              <div class="portfolio-bg">
+                <h2 class="all-title">Growing Business</h2>
+
+                <p class="all-text">Додаток</p>
+              </div>
+            </li>
+          </ul>
         </div>
-    </div>
-</footer>
+      </section>
+    </main>
 
-
-<!-- =========================
-     МОБІЛЬНЕ МЕНЮ
-========================= -->
-
-<div class="mobile-menu">
-  <div class="mobile-menu-container">
-
-    <button
-      class="mobile-menu-close"
-      type="button"
-      aria-label="Закрити меню"
-    >
-      ×
-    </button>
-
-    <nav class="mobile-nav">
-      <ul class="mobile-nav-list">
-
-        <li class="mobile-nav-item">
-          <a
-            class="mobile-nav-link mobile-nav-link-active"
-            href="../index.html"
-          >
-            Студія
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-box">
+          <a class="footer-link" href="../index.html">
+            <span class="footer-span">Web</span>Studio
           </a>
-        </li>
 
-        <li class="mobile-nav-item">
-          <a
-            class="mobile-nav-link"
-            href="./portfolio.html"
-          >
-            Портфоліо
-          </a>
-        </li>
+          <ul class="footer-list">
+            <li class="footer-item">
+              <a class="footer-contact" href="#">
+                м. Київ, пр-т Лесі Українки, 26
+              </a>
+            </li>
 
-        <li class="mobile-nav-item">
-          <a
-            class="mobile-nav-link"
-            href="#"
-          >
-            Контакти
-          </a>
-        </li>
+            <li class="footer-item">
+              <a class="footer-contact" href="mailto:info@devstudio.com">
+                info@devstudio.com
+              </a>
+            </li>
 
-      </ul>
-    </nav>
+            <li class="footer-item">
+              <a class="footer-contact" href="tel:+380961111111">
+                +380961111111
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
 
-    <div class="mobile-contacts">
+    <!-- ================= MODAL ================= -->
 
-      <a
-        class="mobile-phone"
-        href="tel:+380961111111"
-      >
-        +38 096 111 11 11
-      </a>
+    <div data-modal class="back-drop is-hidden">
+      <div class="modal">
+        <button
+          data-modal-close
+          class="modal-close"
+          type="button"
+          aria-label="Закрити"
+        >
+          ×
+        </button>
 
-      <a
-        class="mobile-email"
-        href="mailto:info@devstudio.com"
-      >
-        info@devstudio.com
-      </a>
+        <form>
+          <label>
+            Ім'я
+            <input type="text" name="name" />
+          </label>
 
-      <ul class="mobile-socials">
+          <label>
+            Телефон
+            <input type="tel" name="phone" />
+          </label>
 
-        <li>
-          <a href="#">Instagram</a>
-        </li>
+          <label>
+            Пошта
+            <input type="email" name="email" />
+          </label>
 
-        <li>
-          <a href="#">Twitter</a>
-        </li>
+          <label>
+            Коментар
 
-        <li>
-          <a href="#">Facebook</a>
-        </li>
+            <textarea name="comment" placeholder="Введіть текст"></textarea>
+          </label>
 
-        <li>
-          <a href="#">LinkedIn</a>
-        </li>
+          <label class="checkbox-label">
+            <input type="checkbox" class="checkbox-input" name="agreement" />
 
-      </ul>
+            <span class="checkbox-custom"></span>
 
+            Погоджуюся з розсилкою та приймаю Умови договору
+          </label>
+
+          <button class="btn" type="submit">Відправити</button>
+        </form>
+      </div>
     </div>
 
-  </div>
-</div>
+    <!-- ================= MOBILE MENU ================= -->
 
+    <div class="mobile-menu">
+      <div class="mobile-menu-container">
+        <button
+          class="mobile-menu-close"
+          type="button"
+          aria-label="Закрити меню"
+        >
+          ×
+        </button>
 
+        <nav class="mobile-nav">
+          <ul class="mobile-nav-list">
+            <li class="mobile-nav-item">
+              <a class="mobile-nav-link" href="../index.html"> Студія </a>
+            </li>
 
-<script src="./JS/mobile-menu.js"></script>
+            <li class="mobile-nav-item">
+              <a
+                class="mobile-nav-link mobile-nav-link-active"
+                href="./portfolio.html"
+              >
+                Портфоліо
+              </a>
+            </li>
 
-</body>
+            <li class="mobile-nav-item">
+              <a class="mobile-nav-link" href="#"> Контакти </a>
+            </li>
+          </ul>
+        </nav>
+
+        <div class="mobile-contacts">
+          <a class="mobile-phone" href="tel:+380961111111">
+            +38 096 111 11 11
+          </a>
+
+          <a class="mobile-email" href="mailto:info@devstudio.com">
+            info@devstudio.com
+          </a>
+
+          <ul class="mobile-socials">
+            <li>
+              <a href="#">Instagram</a>
+            </li>
+
+            <li>
+              <a href="#">Twitter</a>
+            </li>
+
+            <li>
+              <a href="#">Facebook</a>
+            </li>
+
+            <li>
+              <a href="#">LinkedIn</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <script src="../JS/modal.js"></script>
+    <script src="../JS/mobile-menu.js"></script>
+  </body>
 </html>
