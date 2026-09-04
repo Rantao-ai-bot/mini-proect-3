@@ -136,7 +136,19 @@ body {
 .hero {
     padding-top: 118px;
     padding-bottom: 118px;
-    background-color: var(--bg-color);
+    background:
+        linear-gradient(
+            90deg,
+            rgba(47, 48, 58, 0.70) 0%,
+            rgba(47, 48, 58, 0.45) 50%,
+            rgba(47, 48, 58, 0.70) 100%
+        ),
+        radial-gradient(
+            circle at 50% 45%,
+            rgba(33, 150, 243, 0.12) 0%,
+            rgba(47, 48, 58, 0) 55%
+        ),
+        var(--bg-color);
     text-align: center;
 }
 
@@ -160,8 +172,10 @@ body {
     line-height: 30px;
     letter-spacing: 0.96px;
     border-radius: 4px;
-    background: #2196F3;
-    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+    background: linear-gradient(180deg, #2196F3 0%, #188CE8 100%);
+    box-shadow:
+        0 4px 4px rgba(0, 0, 0, 0.15),
+        0 2px 8px rgba(33, 150, 243, 0.20);
     padding: 10px 32px;
 }
 
@@ -253,6 +267,10 @@ body {
     background-color: var(--only-color);
     padding-top: 30px;
     padding-bottom: 30px;
+    box-shadow:
+        0 2px 1px rgba(0, 0, 0, 0.12),
+        0 1px 1px rgba(0, 0, 0, 0.14),
+        0 2px 3px rgba(0, 0, 0, 0.20);
 }
 
 .team-detitle {
@@ -608,8 +626,9 @@ body {
 }
 
 .portfolio-button:hover {
-    background-color: #2196F3;
+    background: linear-gradient(180deg, #2196F3 0%, #188CE8 100%);
     color: #FFF;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.12);
 }
 
 .portfolio-spisok {
@@ -622,6 +641,10 @@ body {
     outline: 1px solid #EEE;
     background: #FFF;
     width: 100%;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.04);
+    transition:
+        box-shadow 250ms ease,
+        transform 250ms ease;
 }
 
 .overlay-box {
@@ -636,7 +659,12 @@ body {
     width: 100%;
     height: 100%;
     padding: 40px 24px;
-    background-color: rgba(33, 150, 243, 0.9);
+    background:
+        linear-gradient(
+            180deg,
+            rgba(33, 150, 243, 0.90) 0%,
+            rgba(24, 140, 232, 0.92) 100%
+        );
     color: #FFFFFF;
     font-size: 20px;
     line-height: 1.5;
@@ -646,6 +674,13 @@ body {
 
 .item:hover .overlay-text {
     transform: translateY(0);
+}
+
+.item:hover {
+    box-shadow:
+        0 1px 1px rgba(0, 0, 0, 0.12),
+        0 4px 4px rgba(0, 0, 0, 0.10),
+        0 4px 6px rgba(0, 0, 0, 0.08);
 }
 
 .portfolio-photo {
@@ -882,7 +917,10 @@ textarea {
     font-weight: 700;
     line-height: 30px;
     letter-spacing: 0.96px;
-    background-color: #2196F3;
+    background: linear-gradient(180deg, #2196F3 0%, #188CE8 100%);
+    box-shadow:
+        0 4px 4px rgba(0, 0, 0, 0.15),
+        0 2px 8px rgba(33, 150, 243, 0.18);
     width: 200px;
     height: 50px;
     margin-top: 30px;
