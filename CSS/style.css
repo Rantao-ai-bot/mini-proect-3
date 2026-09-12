@@ -1275,7 +1275,7 @@ text-underline-position: from-font;
 
 @media (min-width: 768px) {
   .container {
-    width: 768px;
+    width: 768px;   
   }
 
   .mobile-menu-open {
@@ -1314,10 +1314,29 @@ text-underline-position: from-font;
   .advantages-list {
     grid-template-columns: repeat(2, 1fr);
   }
+  
+  .advantages-img-div {
+    width: 354.0px;
+height: 120.0px;
+  }
+
 
   .team-list {
     grid-template-columns: repeat(2, 1fr);
   }
+  
+
+    .clients-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    margin-top: 50px;
+  }
+
+  .clients-item {
+    width: 100%;
+  }
+
 
   .portfolio-list {
     display: flex;
@@ -1335,6 +1354,72 @@ text-underline-position: from-font;
 
   .item {
     width: calc(50% - 15px);
+  }
+
+    .footer .container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .footer-box {
+    width: 50%;
+    text-align: center;
+  }
+
+  .footer-logo {
+    display: inline-block;
+    margin-bottom: 20px;
+  }
+
+  .footer-item:first-child .footer-contact {
+    display: inline-block;
+    text-align: left;
+  }
+
+  .footer-item:nth-child(2) .footer-contact,
+  .footer-item:last-child .footer-contact {
+    display: block;
+    text-align: center;
+  }
+
+  .footer-links {
+    width: 50%;
+    height: auto;
+
+    display: grid;
+    grid-template-columns: repeat(4, 44px);
+    justify-content: center;
+    align-items: start;
+    gap: 10px;
+
+    margin: 0;
+    padding: 0;
+  }
+
+  .footer-items:first-child {
+    grid-column: 1 / -1;
+    width: 100%;
+    text-align: center;
+  }
+
+
+  .footer-form {
+    width: 100%;
+    margin: 50px 0 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer-subscribe {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+  }
+
+  .footer-btn {
+    margin: 0;
   }
 }
 
@@ -1403,21 +1488,46 @@ text-underline-position: from-font;
     display: flex;
   }
 
+  .clients-list {
+    display: flex;
+    gap: 30px;
+  }
+
+  .clients-item {
+    width: calc((100% - 150px) / 6);
+  }
+
    .footer .container {
     display: flex;
     align-items: flex-start;
   }
 
   .footer-box {
+    width: auto;
     text-align: left;
   }
 
   .footer-links {
+    width: auto;
     margin-left: 70px;
   }
-}
+
+  .footer-form {
+    margin-left: 93px;
+  }
+
+  .footer-subscribe {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 12px;
+  }
+
+  .footer-btn {
+    margin: 0;
+  }
 
   .item {
     width: calc((100% - 60px) / 3);
   }
-
+}
