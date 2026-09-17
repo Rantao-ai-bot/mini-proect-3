@@ -40,9 +40,9 @@
           type="button"
           aria-label="Відкрити меню"
         >
-          <span></span>
-          <span></span>
-          <span></span>
+          <svg class="burger">
+            <use href="../pages/symbol-defs.svg#menu"></use>
+          </svg>
         </button>
 
         <!-- Navigation -->
@@ -50,7 +50,7 @@
         <nav class="heading-nav">
           <ul class="heading-list">
             <li class="heading-item">
-              <a class="heading-link" href="../index.html"> Студія </a>
+              <a class="heading-link" href="./index.html"> Студія </a>
             </li>
 
             <li class="heading-item">
@@ -71,7 +71,7 @@
           <li class="heading-element">
             <a class="heading-adress" href="mailto:info@devstudio.com"
               ><svg class="heading-icons">
-                <use href="../pages/symbol-defs.svg#envelope"></use>
+                <use href="./pages/symbol-defs.svg#envelope"></use>
               </svg>
               info@devstudio.com
             </a>
@@ -80,7 +80,7 @@
           <li class="heading-element">
             <a class="heading-adress" href="tel:+380961111111"
               ><svg class="heading-icons">
-                <use href="../pages/symbol-defs.svg#smartphone"></use>
+                <use href="./pages/symbol-defs.svg#smartphone"></use>
               </svg>
               +380961111111
             </a>
@@ -319,16 +319,16 @@
       <div class="container">
         <div class="footer-box">
           <div class="footer-logo-wrap">
-            <a class="footer-logo" href="./index.html">
-              <span class="footer-span">Web</span>Studio
-            </a>
+          <a class="footer-logo" href="../index.html">
+            <span class="footer-span">Web</span>Studio
+          </a>
           </div>
 
           <ul class="footer-list">
             <li class="footer-item">
               <a class="footer-contact" href="#">
                 м. Київ, пр-т Лесі Українки, 26
-              </a>  
+              </a>
             </li>
 
             <li class="footer-item">
@@ -344,10 +344,9 @@
             </li>
           </ul>
         </div>
+        <div class="items-div">
+        <h2 class="footer-title">приєднуйтесь</h2>
         <ul class="footer-links">
-          <li class="footer-items">
-            <h2 class="footer-title">приєднуйтесь</h2>
-          </li>
           <li class="footer-items">
             <a class="footer-link" href="https://www.instagram.com/">
               <svg class="footer-icon">
@@ -377,6 +376,7 @@
             </a>
           </li>
         </ul>
+        </div>
         <form class="footer-form">
           <h2 class="footer-detitle">Підпишіться на розсилку</h2>
 
@@ -398,54 +398,6 @@
       </div>
     </footer>
 
-    <!-- ================= MODAL ================= -->
-
-    <div data-modal class="back-drop is-hidden">
-      <div class="modal">
-        <button
-          data-modal-close
-          class="modal-close"
-          type="button"
-          aria-label="Закрити"
-        >
-          ×
-        </button>
-
-        <form>
-          <label>
-            Ім'я
-            <input type="text" name="name" />
-          </label>
-
-          <label>
-            Телефон
-            <input type="tel" name="phone" />
-          </label>
-
-          <label>
-            Пошта
-            <input type="email" name="email" />
-          </label>
-
-          <label>
-            Коментар
-
-            <textarea name="comment" placeholder="Введіть текст"></textarea>
-          </label>
-
-          <label class="checkbox-label">
-            <input type="checkbox" class="checkbox-input" name="agreement" />
-
-            <span class="checkbox-custom"></span>
-
-            Погоджуюся з розсилкою та приймаю Умови договору
-          </label>
-
-          <button class="btn" type="submit">Відправити</button>
-        </form>
-      </div>
-    </div>
-
     <!-- ================= MOBILE MENU ================= -->
 
     <div class="mobile-menu">
@@ -461,14 +413,16 @@
         <nav class="mobile-nav">
           <ul class="mobile-nav-list">
             <li class="mobile-nav-item">
-              <a class="mobile-nav-link" href="../index.html"> Студія </a>
+              <a
+                class="mobile-nav-link mobile-nav-link-active"
+                href="../index.html"
+              >
+                Студія
+              </a>
             </li>
 
             <li class="mobile-nav-item">
-              <a
-                class="mobile-nav-link mobile-nav-link-active"
-                href="./portfolio.html"
-              >
+              <a class="mobile-nav-link" href="../portfolio/portfolio.html">
                 Портфоліо
               </a>
             </li>
@@ -490,19 +444,19 @@
 
           <ul class="mobile-socials">
             <li>
-              <a href="#">Instagram</a>
+              <a href="#"> Instagram </a>
             </li>
 
             <li>
-              <a href="#">Twitter</a>
+              <a href="#"> Twitter </a>
             </li>
 
             <li>
-              <a href="#">Facebook</a>
+              <a href="#"> Facebook </a>
             </li>
 
             <li>
-              <a href="#">LinkedIn</a>
+              <a href="#"> LinkedIn </a>
             </li>
           </ul>
         </div>
