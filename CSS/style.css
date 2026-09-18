@@ -156,25 +156,20 @@ body {
 ========================= */
 
 .hero {
-  padding-top: 118px;
-  padding-bottom: 118px;
+  padding:118px 0;
+  background-image: linear-gradient(rgb(47, 48, 58, 0.4),rgb(47, 48, 58, 0.4)), url(../pages/mobile/hero-mobile@1x.webp);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
 
-  background:
-    linear-gradient(
-      90deg,
-      rgba(47, 48, 58, 0.7) 0%,
-      rgba(47, 48, 58, 0.45) 50%,
-      rgba(47, 48, 58, 0.7) 100%
-    ),
-    radial-gradient(
-      circle at 50% 45%,
-      rgba(33, 150, 243, 0.12) 0%,
-      rgba(47, 48, 58, 0) 55%
-    ),
-    url("../pages/Img10.png") center / cover no-repeat;
-
-  text-align: center;
-  width: 100%;
+@media (min-device-pixel-ratio: 2),
+       (-webkit-min-device-pixel-ratio: 2),
+       (min-resolution: 192dpi),
+       (min-resolution: 2dppx) {
+  .hero {
+      background-image: linear-gradient(rgb(47, 48, 58, 0.4),rgb(47, 48, 58, 0.4)), url(../pages/mobile/hero-mobile@2x.webp);
+  }
 }
 
 .hero-title {
@@ -1310,6 +1305,19 @@ textarea {
     gap: 10px;
   }
 
+  .hero {
+      background-image: linear-gradient(rgb(47, 48, 58, 0.4),rgb(47, 48, 58, 0.4)), url(../pages/tablet/hero-tablet@1x.webp);
+  }
+
+  @media (min-device-pixel-ratio: 2),
+       (-webkit-min-device-pixel-ratio: 2),
+       (min-resolution: 192dpi),
+       (min-resolution: 2dppx) {
+  .hero {
+      background-image: linear-gradient(rgb(47, 48, 58, 0.4),rgb(47, 48, 58, 0.4)), url(../pages/tablet/hero-tablet@2x.webp);
+  }
+}
+
   .advantages-list {
     grid-template-columns: repeat(2, 1fr);
   }
@@ -1480,7 +1488,17 @@ height: 50.0px;
   .hero {
     padding-top: 200px;
     padding-bottom: 200px;
+     background-image: linear-gradient(rgb(47, 48, 58, 0.4),rgb(47, 48, 58, 0.4)), url(../pages/dekstop/hero-destop@1x.webp);
   }
+
+  @media (min-device-pixel-ratio: 2),
+       (-webkit-min-device-pixel-ratio: 2),
+       (min-resolution: 192dpi),
+       (min-resolution: 2dppx) {
+  .hero {
+      background-image: linear-gradient(rgb(47, 48, 58, 0.4),rgb(47, 48, 58, 0.4)), url(../pages/dekstop/hero-destop@2x.webp);
+  }
+}
 
   .hero-title {
     font-size: 44px;
