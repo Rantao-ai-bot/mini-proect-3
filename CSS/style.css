@@ -204,6 +204,11 @@ body {
   padding: 10px 32px;
 }
 
+.btn-div {
+  display: flex;
+  justify-content: center;
+}
+
 /* =========================
    ADVANTAGES
 ========================= */
@@ -503,6 +508,10 @@ body {
   font-weight: 700;
   line-height: normal;
   letter-spacing: 0.72px;
+}
+
+.footer-list:first-child .footer-contact {
+  color: #FFFFFF;
 }
 
 .footer-span {
@@ -1361,6 +1370,11 @@ textarea {
     width: 100%;
     height: auto;
     display: block;
+  }
+
+  .portfolio-list {
+    display: flex;
+    justify-content: center;
   }
 
   /* FOOTER */
