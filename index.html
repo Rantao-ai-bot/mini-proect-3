@@ -5,7 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <title>WebStudio</title>
-    <link rel="icon" type="image/png" sizes="48x48" href="./pages/logo-w-favicon-48x48.png">
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="48x48"
+      href="./pages/logo-w-favicon-48x48.png"
+    />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 
@@ -97,10 +102,10 @@
       <section class="hero">
         <div class="container">
           <h1 class="hero-title">Ефективні рішення для вашого бізнесу</h1>
-                 <div class="btn-div">
-          <button data-modal-open class="hero-button" type="button">
-            Замовити послугу
-          </button>
+          <div class="btn-div">
+            <button data-modal-open class="hero-button" type="button">
+              Замовити послугу
+            </button>
           </div>
         </div>
       </section>
@@ -180,33 +185,60 @@
 
           <ul class="perspectief-list">
             <li class="perspectief-item">
-              <img
-                src="./pages/box-1.jpg"
-                alt="Дизайн"
-                class="perspectief-photo"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./pages/dekstop/first-desktop@1x.jpg 1x,
+                    ./pages/dekstop/first-desktop@2x.jpg 2x
+                  "
+                  media="(min-width:1200px)"
+                />
+                <img
+                  src="./pages/box-1.jpg"
+                  alt="Дизайн"
+                  class="perspectief-photo"
+                />
+              </picture>
               <div class="perspectief-div">
                 <p class="perspektief-text">Десктопні додатки</p>
               </div>
             </li>
 
             <li class="perspectief-item">
-              <img
-                src="./pages/img-9.png"
-                alt="Розробка"
-                class="perspectief-photo"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./pages/dekstop/second-desktop@1x.jpg 1x,
+                    ./pages/dekstop/second-desktop@2x.jpg 2x
+                  "
+                  media="(min-width:1200px)"
+                />
+                <img
+                  src="./pages/img-9.png"
+                  alt="Розробка"
+                  class="perspectief-photo"
+                />
+              </picture>
               <div class="perspectief-div">
                 <p class="perspektief-text">Мобільні додатки</p>
               </div>
             </li>
 
             <li class="perspectief-item">
-              <img
-                src="./pages/box-3.png"
-                alt="Мобільні додатки"
-                class="perspectief-photo"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./pages/dekstop/third-desktop@1x.jpg 1x,
+                    ./pages/dekstop/third-desktop@2x.jpg 2x
+                  "
+                  media="(min-width:1200px)"
+                />
+                <img
+                  src="./pages/box-3.png"
+                  alt="Мобільні додатки"
+                  class="perspectief-photo"
+                />
+              </picture>
               <div class="perspectief-div">
                 <p class="perspektief-text">Дизайнерські рішення</p>
               </div>
@@ -223,12 +255,34 @@
 
           <ul class="team-list">
             <li class="team-items">
-              <img
-                src="./pages/img.jpg"
-                alt="Ігор Дем'яненко"
-                class="team-photo"
-              />
-
+              <picture>
+                <source
+                  srcset="
+                    ./pages/dekstop/igor-desktop@1x.jpg 1x,
+                    ./pages/dekstop/igor-desktop@2x.jpg 2x
+                  "
+                  media="(min-width:1200px)"
+                />
+                <source
+                  srcset="
+                    ./pages/tablet/igor-tablet@1x.jpg 1x,
+                    ./pages/tablet/igor-tablet@2x.jpg 2x
+                  "
+                  media="(min-width:768px)"
+                />
+                <source
+                  srcset="
+                    ./pages/mobile/igor-mobile@1x.jpg 1x,
+                    ./pages/mobile/igor-mobile@2x.jpg 2x
+                  "
+                  media="(max-width:767px)"
+                />
+                <img
+                  src="./pages/img.jpg"
+                  alt="Ігор Дем'яненко"
+                  class="team-photo"
+                />
+              </picture>
               <div class="team-div">
                 <h3 class="team-title">Ігор Дем'яненко</h3>
 
@@ -268,11 +322,34 @@
             </li>
 
             <li class="team-items">
-              <img
-                src="./pages/img-1.jpg"
-                alt="Ольга Рєпіна"
-                class="team-photo"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./pages/dekstop/olga-desktop@1x.jpg 1x,
+                    ./pages/dekstop/olga-desktop@2x.jpg 2x
+                  "
+                  media="(min-width:1200px)"
+                />
+                <source
+                  srcset="
+                    ./pages/tablet/olga-tablet@1x.jpg 1x,
+                    ./pages/tablet/olga-tablet@2x.jpg 2x
+                  "
+                  media="(min-width:768px)"
+                />
+                <source
+                  srcset="
+                    ./pages/mobile/olga-mobile@1x.jpg 1x,
+                    ./pages/mobile/olga-mobile@2x.jpg 2x
+                  "
+                  media="(max-width:767px)"
+                />
+                <img
+                  src="./pages/img-1.jpg"
+                  alt="Ольга Рєпіна"
+                  class="team-photo"
+                />
+              </picture>
 
               <div class="team-div">
                 <h3 class="team-title">Ольга Рєпіна</h3>
@@ -312,12 +389,36 @@
               </div>
             </li>
 
+            <li class="team-items"></li>
             <li class="team-items">
-              <img
-                src="./pages/img-2.jpg"
-                alt="Микола Тарасов"
-                class="team-photo"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./pages/dekstop/mikola-desktop@1x.jpg 1x,
+                    ./pages/dekstop/mikola-desktop@2x.jpg 2x
+                  "
+                  media="(min-width:1200px)"
+                />
+                <source
+                  srcset="
+                    ./pages/tablet/mikola-tablet@1x.jpg 1x,
+                    ./pages/tablet/mikola-tablet@2x.jpg 2x
+                  "
+                  media="(min-width:768px)"
+                />
+                <source
+                  srcset="
+                    ./pages/mobile/mikola-mobile@1x.jpg 1x,
+                    ./pages/mobile/mikola-mobile@2x.jpg 2x
+                  "
+                  media="(max-width:767px)"
+                />
+                <img
+                  src="./pages/img-2.jpg"
+                  alt="Микола Тарасов"
+                  class="team-photo"
+                />
+              </picture>
 
               <div class="team-div">
                 <h3 class="team-title">Микола Тарасов</h3>
@@ -357,11 +458,34 @@
             </li>
 
             <li class="team-items">
-              <img
-                src="./pages/img-3.jpg"
-                alt="Михайло Єрмаков"
-                class="team-photo"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./pages/dekstop/mixailo-desktop@1x.jpg 1x,
+                    ./pages/dekstop/mixailo-desktop@2x.jpg 2x
+                  "
+                  media="(min-width:1200px)"
+                />
+                <source
+                  srcset="
+                    ./pages/tablet/mixailo-tablet@1x.jpg 1x,
+                    ./pages/tablet/mixailo-tablet@2x.jpg 2x
+                  "
+                  media="(min-width:768px)"
+                />
+                <source
+                  srcset="
+                    ./pages/mobile/mixailo-mobile@1x.jpg 1x,
+                    ./pages/mobile/mixailo-mobile@2x.jpg 2x
+                  "
+                  media="(max-width:767px)"
+                />
+                <img
+                  src="./pages/img-3.jpg"
+                  alt="Михайло Єрмаков"
+                  class="team-photo"
+                />
+              </picture>
 
               <div class="team-div">
                 <h3 class="team-title">Михайло Єрмаков</h3>
@@ -459,9 +583,9 @@
       <div class="container">
         <div class="footer-box">
           <div class="footer-logo-wrap">
-          <a class="footer-logo" href="./index.html">
-            <span class="footer-span">Web</span>Studio
-          </a>
+            <a class="footer-logo" href="./index.html">
+              <span class="footer-span">Web</span>Studio
+            </a>
           </div>
 
           <ul class="footer-list">
@@ -485,37 +609,37 @@
           </ul>
         </div>
         <div class="items-div">
-        <h2 class="footer-title">приєднуйтесь</h2>
-        <ul class="footer-links">
-          <li class="footer-items">
-            <a class="footer-link" href="https://www.instagram.com/">
-              <svg class="footer-icon">
-                <use href="./pages/symbol-defs.svg#instagram"></use>
-              </svg>
-            </a>
-          </li>
-          <li class="footer-items">
-            <a class="footer-link" href="https://www.X.com">
-              <svg class="footer-icon">
-                <use href="./pages/symbol-defs.svg#twitter"></use>
-              </svg>
-            </a>
-          </li>
-          <li class="footer-items">
-            <a class="footer-link" href="https://www.facebook.com/">
-              <svg class="footer-icon">
-                <use href="./pages/symbol-defs.svg#facebook"></use>
-              </svg>
-            </a>
-          </li>
-          <li class="footer-items">
-            <a class="footer-link" href="https://www.linkedin.com/">
-              <svg class="footer-icon">
-                <use href="./pages/symbol-defs.svg#linkedin"></use>
-              </svg>
-            </a>
-          </li>
-        </ul>
+          <h2 class="footer-title">приєднуйтесь</h2>
+          <ul class="footer-links">
+            <li class="footer-items">
+              <a class="footer-link" href="https://www.instagram.com/">
+                <svg class="footer-icon">
+                  <use href="./pages/symbol-defs.svg#instagram"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="footer-items">
+              <a class="footer-link" href="https://www.X.com">
+                <svg class="footer-icon">
+                  <use href="./pages/symbol-defs.svg#twitter"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="footer-items">
+              <a class="footer-link" href="https://www.facebook.com/">
+                <svg class="footer-icon">
+                  <use href="./pages/symbol-defs.svg#facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="footer-items">
+              <a class="footer-link" href="https://www.linkedin.com/">
+                <svg class="footer-icon">
+                  <use href="./pages/symbol-defs.svg#linkedin"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
         </div>
         <form class="footer-form">
           <h2 class="footer-detitle">Підпишіться на розсилку</h2>
