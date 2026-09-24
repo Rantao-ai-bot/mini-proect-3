@@ -2188,6 +2188,10 @@ textarea {
     width: 443px;
     max-width: 100%;
   }
+
+  .item {
+    width: calc((100% - 30px) / 2);
+  }
 }
 
 @media (min-width: 1200px) {
@@ -2363,4 +2367,11 @@ textarea {
     align-items: center;
     justify-content: center;
   }
+
+  .item {
+    width: calc((100% - 60px) / 3);
+  }
 }
+
+
+
