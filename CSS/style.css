@@ -340,6 +340,12 @@ body {
   display: grid;
   grid-template-columns: 100%;
   gap: 30px;
+  justify-items: center;
+}
+
+.team-items {
+  width: 100%;
+  max-width: 450px;
 }
 
 .team-div {
@@ -418,8 +424,8 @@ body {
 ========================= */
 
 .clients {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
 .clients-title {
@@ -437,10 +443,12 @@ body {
   grid-template-columns: repeat(2, 1fr);
   gap: 30px;
   margin-top: 30px;
+  justify-content: center;
 }
 
 .clients-item {
   width: 100%;
+  max-width: 210.0px;
 }
 
 .client-icon {
@@ -498,8 +506,6 @@ body {
   text-align: center;
 }
 
-/* CONTACTS */
-
 .footer-logo-wrap {
   width: 100%;
   margin-bottom: 20px;
@@ -554,8 +560,6 @@ body {
   text-align: center;
 }
 
-/* SOCIAL */
-
 .footer-social {
   width: 100%;
   margin: 0 0 50px;
@@ -565,11 +569,22 @@ body {
   align-items: center;
 }
 
-.footer-title,
+.footer-title {
+   width: 100%;
+   margin-bottom: 20px;
+  color: #fff;
+  font-family: Roboto, sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.14;
+  text-transform: uppercase;
+  text-align: center;
+}
+
 .footer-detitle {
   width: 100%;
-  margin: 0 0 20px;
-
+  margin-top: 60px;
+  margin-bottom: 20px;
   color: #fff;
   font-family: Roboto, sans-serif;
   font-size: 14px;
@@ -822,15 +837,15 @@ body {
   display: flex;
   flex-wrap: wrap;
   gap: 30px;
+  justify-content: center;
 }
 
 .item {
   outline: 1px solid #eee;
   background: #fff;
-  width: 100%;
-
+  width: 354px;
+  height: 404px;
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.04);
-
   transition:
     box-shadow 250ms ease,
     transform 250ms ease;
@@ -848,17 +863,14 @@ body {
   width: 100%;
   height: 100%;
   padding: 40px 24px;
-
   background: linear-gradient(
     180deg,
     rgba(33, 150, 243, 0.9) 0%,
     rgba(24, 140, 232, 0.92) 100%
   );
-
   color: #ffffff;
   font-size: 20px;
   line-height: 1.5;
-
   transform: translateY(100%);
   transition: transform 250ms ease;
 }
@@ -1317,6 +1329,41 @@ textarea {
     width: 100%;
   }
 
+   .clients .container {
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .clients .container {
+  box-sizing: border-box;
+}
+
+   .clients-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    width: 100%;
+    margin: 30px auto 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  .clients-item {
+    width: 100%;
+    max-width: none;
+    margin: 0;
+    box-sizing: border-box;
+  }
+
+  .clients-link {
+    width: 100%;
+    height: 92px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
   .footer {
     width: 100%;
     max-width: 100%;
@@ -1406,10 +1453,8 @@ textarea {
   .items-div {
     width: 100%;
     max-width: 100%;
-
-    margin: 0 0 50px;
+    margin: 0 0 60px;
     padding: 0;
-
     text-align: center;
     box-sizing: border-box;
   }
@@ -1466,34 +1511,26 @@ textarea {
   .footer-form {
     width: 100%;
     max-width: 100%;
-
     margin: 0;
     padding: 0;
-
     display: flex;
     flex-direction: column;
     align-items: center;
-
     text-align: center;
-
     box-sizing: border-box;
+
   }
 
   .footer-detitle {
     width: 100%;
     max-width: 100%;
-
     margin: 0 0 20px;
-
     color: #fff;
-
     font-size: 14px;
     font-weight: 700;
     line-height: 1.14;
-
     text-align: center;
     text-transform: uppercase;
-
     box-sizing: border-box;
   }
 
@@ -1675,6 +1712,11 @@ textarea {
 
   .team-list {
     grid-template-columns: repeat(2, 1fr);
+  }
+
+  .clients {
+    padding-top: 94px;
+    padding-bottom: 94px;
   }
 
   .clients-list {
@@ -1862,12 +1904,8 @@ textarea {
   }
 
   .footer-send {
-    width: 443px;
-    max-width: 100%;
-    min-width: 0;
-
+    width: 450px;
     height: 50px;
-
     margin: 0;
   }
 
