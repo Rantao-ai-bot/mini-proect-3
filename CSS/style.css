@@ -35,6 +35,7 @@ body {
   padding: 0 15px;
   margin: 0 auto;
   width: 100%;
+  outline: 1px solid red;
 }
 
 /* =========================
@@ -230,6 +231,8 @@ body {
 .advantages-img {
   width: 70px;
   height: 70px;
+  margin-top: 25px;
+  margin-bottom: 25px;
 }
 
 .advantages-img-div {
@@ -448,7 +451,7 @@ body {
 
 .clients-item {
   width: 100%;
-  max-width: 210.0px;
+  max-width: 210px;
 }
 
 .client-icon {
@@ -570,8 +573,8 @@ body {
 }
 
 .footer-title {
-   width: 100%;
-   margin-bottom: 20px;
+  width: 100%;
+  margin-bottom: 20px;
   color: #fff;
   font-family: Roboto, sans-serif;
   font-size: 14px;
@@ -843,7 +846,7 @@ body {
 .item {
   outline: 1px solid #eee;
   background: #fff;
-  width: 354px;
+  width: 100%;
   height: 404px;
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.04);
   transition:
@@ -1317,31 +1320,31 @@ textarea {
    MOBILE
 ========================= */
 
-@media (min-width: 420px) {
+@media (min-width: 480px) {
   .container {
-    width: 420px;
+    width: 480px;
   }
   .advantages-img {
     width: 70px;
-    height: 70px;
+  height: 70px;
+  margin-top: 25px;
+  margin-bottom: 25px;
     display: block;
-    padding-top: 25px;
-    margin-bottom: 25px;
   }
   .advantages-img-div {
     width: 100%;
   }
 
-   .clients .container {
+  .clients .container {
     width: 100%;
     margin: 0 auto;
   }
 
   .clients .container {
-  box-sizing: border-box;
-}
+    box-sizing: border-box;
+  }
 
-   .clients-list {
+  .clients-list {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 30px;
@@ -1521,7 +1524,6 @@ textarea {
     align-items: center;
     text-align: center;
     box-sizing: border-box;
-
   }
 
   .footer-detitle {
@@ -1555,8 +1557,8 @@ textarea {
 
   .footer-send {
     display: block;
-    width: 450.0px;
-height: 50.0px;
+    width: 450px;
+    height: 50px;
     margin: 0;
     padding: 0 12px;
 
@@ -1620,6 +1622,12 @@ height: 50.0px;
 
     fill: #fff;
   }
+
+  .item {
+    width: 450.0px;
+height: 404.0px;
+
+  }
 }
 
 /* =========================
@@ -1681,6 +1689,12 @@ height: 50.0px;
     }
   }
 
+   .hero-title {
+    width: 360px;
+    height: 84px;
+    margin: 0 auto 30px;
+  }
+
   .advantages-list {
     grid-template-columns: repeat(2, 1fr);
   }
@@ -1736,6 +1750,7 @@ height: 50.0px;
     display: flex;
     flex-wrap: wrap;
     gap: 30px;
+     justify-content: flex-start;
   }
 
   .item {
