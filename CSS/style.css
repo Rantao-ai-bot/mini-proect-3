@@ -186,8 +186,7 @@ body {
   letter-spacing: 1.56px;
   text-transform: uppercase;
   width: 100%;
-  margin: 0 auto 30px;
-
+ 
   animation: heroTitle 1s ease;
 }
 
@@ -1326,9 +1325,9 @@ textarea {
   }
   .advantages-img {
     width: 70px;
-  height: 70px;
-  margin-top: 25px;
-  margin-bottom: 25px;
+    height: 70px;
+    margin-top: 25px;
+    margin-bottom: 25px;
     display: block;
   }
   .advantages-img-div {
@@ -1624,9 +1623,8 @@ textarea {
   }
 
   .item {
-    width: 450.0px;
-height: 404.0px;
-
+    width: 450px;
+    height: 404px;
   }
 }
 
@@ -1689,7 +1687,7 @@ height: 404.0px;
     }
   }
 
-   .hero-title {
+  .hero-title {
     width: 360px;
     height: 84px;
     margin: 0 auto 30px;
@@ -1750,7 +1748,7 @@ height: 404.0px;
     display: flex;
     flex-wrap: wrap;
     gap: 30px;
-     justify-content: flex-start;
+    justify-content: flex-start;
   }
 
   .item {
@@ -1979,11 +1977,13 @@ height: 404.0px;
     }
   }
 
-  .hero-title {
+   .hero-title {
+    width: 696px;
+    height: 120.0px;
+    margin: 0 auto 30px;
     font-size: 44px;
     line-height: 1.36;
     letter-spacing: 2.64px;
-    width: 696px;
   }
 
   .advantages {
@@ -2277,22 +2277,18 @@ height: 404.0px;
       max-width: 1200px;
       margin: 0 auto;
       padding: 0 15px;
-
       display: flex;
       flex-wrap: nowrap;
       align-items: flex-start;
       justify-content: flex-start;
-
       box-sizing: border-box;
     }
 
     .footer-box {
       width: 230px;
       flex: 0 0 230px;
-
       margin: 0 40px 0 0;
       padding: 0;
-
       text-align: left;
     }
 
@@ -2310,11 +2306,9 @@ height: 404.0px;
       width: 100%;
       margin: 0;
       padding: 0;
-
       display: flex;
       flex-direction: column;
       gap: 7px;
-
       text-align: left;
     }
 
@@ -2333,10 +2327,8 @@ height: 404.0px;
     .items-div {
       width: 206px;
       flex: 0 0 206px;
-
-      margin: 0 93px 0 0;
+      margin: auto;
       padding: 0;
-
       text-align: left;
     }
 
@@ -2349,13 +2341,10 @@ height: 404.0px;
 
     .items-div .footer-links {
       width: 206px;
-
       display: flex;
       justify-content: flex-start;
       align-items: center;
-
       gap: 10px;
-
       margin: 0;
       padding: 0;
     }
@@ -2364,7 +2353,6 @@ height: 404.0px;
       width: 44px;
       height: 44px;
       flex: 0 0 44px;
-
       display: flex;
       align-items: center;
       justify-content: center;
@@ -2373,10 +2361,8 @@ height: 404.0px;
     .footer-form {
       width: 570px;
       flex: 0 0 570px;
-
       margin: 0;
       padding: 0;
-
       display: flex;
       flex-direction: column;
       align-items: flex-start;
@@ -2395,17 +2381,14 @@ height: 404.0px;
       display: flex;
       flex-direction: row;
       align-items: center;
-
       gap: 12px;
     }
 
     .footer-send {
       width: 358px;
       height: 50px;
-
       min-width: 0;
       flex: 0 0 358px;
-
       box-sizing: border-box;
       margin: 0;
     }
@@ -2413,11 +2396,8 @@ height: 404.0px;
     .footer-btn {
       width: 200px;
       height: 50px;
-
       flex: 0 0 200px;
-
       margin: 0;
-
       display: flex;
       align-items: center;
       justify-content: center;
