@@ -1778,7 +1778,7 @@ textarea {
     margin: 0;
     padding: 0;
     text-align: center;
-    margin-right: 245px;
+    margin-right: 165px;
   }
 
   .footer-logo-wrap {
@@ -2287,9 +2287,7 @@ textarea {
     }
 
     .items-div {
-      width: 206px;
-      flex: 0 0 206px;
-      margin: auto;
+      margin-right: auto;
       padding: 0;
       text-align: left;
     }
