@@ -1,0 +1,62 @@
+.perspectief {
+  padding-bottom: 94px;
+  display: none;
+}
+
+.perspectief-list {
+  display: flex;
+  gap: 30px;
+}
+
+.perspectief-title {
+  color: var(--main-color);
+  text-align: center;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 1.08px;
+  margin-bottom: 50px;
+}
+
+.perspectief-photo {
+  width: 370px;
+  height: 294px;
+}
+
+.perspectief-item {
+  position: relative;
+}
+
+.perspectief-div {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+
+  width: 370px;
+  height: 70px;
+
+  background: rgba(47, 48, 58, 0.8);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.perspektief-text {
+  color: #fff;
+  text-align: center;
+  font-family: Roboto, sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 0.42px;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+@media (min-width:1200px) {
+   .perspectief {
+    display: block;
+  }
+}

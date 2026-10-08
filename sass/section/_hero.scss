@@ -1,0 +1,128 @@
+.hero {
+  padding: 118px 0;
+  background-image:
+    linear-gradient(rgb(47, 48, 58, 0.4), rgb(47, 48, 58, 0.4)),
+    url(../pages/mobile/hero-mobile@1x.webp);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+@media (min-device-pixel-ratio: 2),
+  (-webkit-min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .hero {
+    background-image:
+      linear-gradient(rgb(47, 48, 58, 0.4), rgb(47, 48, 58, 0.4)),
+      url(../pages/mobile/hero-mobile@2x.webp);
+  }
+}
+
+.hero-title {
+  color: var(--only-color);
+  text-align: center;
+  font-size: 26px;
+  line-height: 1.36;
+  font-weight: 900;
+  letter-spacing: 1.56px;
+  text-transform: uppercase;
+  width: 100%;
+
+  animation: heroTitle 1s ease;
+}
+
+.hero-button {
+  width: 216px;
+  color: var(--only-color);
+  text-align: center;
+  font-size: 16px;
+  line-height: 30px;
+  letter-spacing: 0.96px;
+  border-radius: 4px;
+
+  background: linear-gradient(180deg, #2196f3 0%, #188ce8 100%);
+
+  box-shadow:
+    0 4px 4px rgba(0, 0, 0, 0.15),
+    0 2px 8px rgba(33, 150, 243, 0.2);
+
+  padding: 10px 32px;
+}
+
+.btn-div {
+  display: flex;
+  justify-content: center;
+}
+
+@media (min-width:768px) {
+  .hero-button {
+    width: 216px;
+  }
+
+  .hero {
+    background-image:
+      linear-gradient(rgb(47, 48, 58, 0.4), rgb(47, 48, 58, 0.4)),
+      url(../pages/tablet/hero-tablet@1x.webp);
+  }
+
+  @media (min-device-pixel-ratio: 2),
+    (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .hero {
+      background-image:
+        linear-gradient(rgb(47, 48, 58, 0.4), rgb(47, 48, 58, 0.4)),
+        url(../pages/tablet/hero-tablet@2x.webp);
+    }
+  }
+
+  .hero-title {
+    width: 360px;
+    height: 84px;
+    margin: 0 auto 30px;
+  }
+}
+
+ @media (min-width:1200px) {
+  .hero {
+    padding-top: 200px;
+    padding-bottom: 200px;
+    background-image:
+      linear-gradient(rgb(47, 48, 58, 0.4), rgb(47, 48, 58, 0.4)),
+      url(../pages/dekstop/hero-destop@1x.webp);
+  }
+
+  @media (min-device-pixel-ratio: 2),
+    (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .hero {
+      background-image:
+        linear-gradient(rgb(47, 48, 58, 0.4), rgb(47, 48, 58, 0.4)),
+        url(../pages/dekstop/hero-destop@2x.webp);
+    }
+  }
+
+  .hero-title {
+    width: 696px;
+    height: 120px;
+    margin: 0 auto 30px;
+    font-size: 44px;
+    line-height: 1.36;
+    letter-spacing: 2.64px;
+  }
+ }
+
+
+@keyframes heroTitle {
+  0% {
+    opacity: 0;
+    transform: translateY(-50px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

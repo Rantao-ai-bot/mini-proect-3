@@ -1,0 +1,151 @@
+.team {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background-color: var(--team-color);
+}
+
+.team-list {
+  display: grid;
+  grid-template-columns: 100%;
+  gap: 30px;
+  justify-items: center;
+}
+
+.team-items {
+  width: 100%;
+  max-width: 450px;
+}
+
+.team-div {
+  background-color: var(--only-color);
+  padding-top: 30px;
+  padding-bottom: 30px;
+
+  box-shadow:
+    0 2px 1px rgba(0, 0, 0, 0.12),
+    0 1px 1px rgba(0, 0, 0, 0.14),
+    0 2px 3px rgba(0, 0, 0, 0.2);
+}
+
+.team-detitle {
+  color: var(--main-color);
+  text-align: center;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 1.17;
+  letter-spacing: 1.08px;
+  margin-bottom: 50px;
+}
+
+.team-title {
+  color: #212121;
+  text-align: center;
+  font-family: Roboto, sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 0.48px;
+  margin-bottom: 10px;
+}
+
+.team-text {
+  color: var(--text-color);
+  text-align: center;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+  letter-spacing: 0.48px;
+}
+
+.team-item {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 16px;
+}
+
+.team-icon {
+  width: 20px;
+  height: 20px;
+  fill: #afb1b8;
+}
+
+.team-link {
+  width: 44px;
+  height: 44px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+}
+
+.team-link:hover {
+  background-color: #2196f3;
+}
+
+.team-link:hover .team-icon {
+  fill: #fff;
+}
+ 
+@media (min-width:480px) {
+
+}
+
+@media (min-width:768px) {
+   .team-list {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  .team-items {
+    min-width: 0;
+    width: 100%;
+    box-sizing: border-box;
+  }
+  .team-items img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+  }
+  .team-items:hover {
+    animation: none;
+  }
+
+  .team-list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width:1200px) {
+  .team {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+
+  .team-title {
+    margin-bottom: 10px;
+    letter-spacing: 0.48px;
+    font-size: 16px;
+  }
+
+  .team-list {
+    display: flex;
+  }
+}
+
+
+
+
+
+
+.team-items:hover {
+  animation: teamCard 0.5s forwards;
+}
+
+@keyframes teamCard {
+  0% {
+    transform: scale(1);
+  }
+
+  100% {
+    transform: scale(1.05);
+  }
+}
