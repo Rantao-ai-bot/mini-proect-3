@@ -108,16 +108,12 @@
   &:hover {
   fill: #2196f3;
 }
-}
-}
-
-.heading__icons {
+&__icons {
   width: 16px;
   height: 12px;
   fill: currentColor;
 }
-
-.heading__adress {
+&__adress {
   color: var(--text-color);
   font-size: 14px;
   font-weight: 500;
@@ -127,19 +123,30 @@
   align-items: center;
   gap: 10px;
   transition: color 250ms ease;
-}
 
-.heading__adress:hover,
-.heading__adress:focus {
+  
+&:hover,
+&:focus {
   color: var(--link-color);
 }
+}
 
-.heading__adress:hover .heading__icons {
+&:hover & {
   fill: #2196f3;
 }
 
-.heading__adress:hover .heading__icons {
+&:hover & {
   fill: #2196f3;
+}
+
+&:hover & {
+  fill: #2196f3;
+}
+
+&:hover & {
+  fill: #2196f3;
+}
+}
 }
 
 
