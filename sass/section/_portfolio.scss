@@ -1,46 +1,54 @@
 .portfolio {
   padding-top: 60px;
   padding-bottom: 60px;
-}
 
-.portfolio-list {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 8px;
-  margin-bottom: 50px;
-}
+  &-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-bottom: 50px;
+  }
 
-.portfolio-button {
-  color: #212121;
-  text-align: center;
-  font-family: Roboto;
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: 26px;
-  letter-spacing: 0.48px;
-  gap: 22px;
-  padding: 6px 22px;
-  border-radius: 4px;
-}
+  &-button {
+    color: #212121;
+    text-align: center;
+    font-family: Roboto;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 26px;
+    letter-spacing: 0.48px;
+    gap: 22px;
+    padding: 6px 22px;
+    border-radius: 4px;
 
-.portfolio-span {
-  font-size: 16px;
-}
+    &:hover {
+      background: linear-gradient(180deg, #2196f3 0%, #188ce8 100%);
+      color: #fff;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.12);
+    }
+  }
 
-.portfolio-button:hover {
-  background: linear-gradient(180deg, #2196f3 0%, #188ce8 100%);
+  &-span {
+    font-size: 16px;
+  }
 
-  color: #fff;
+  &-spisok {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+  }
 
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.12);
-}
+  &-photo {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
 
-.portfolio-spisok {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 30px;
-  justify-content: center;
+  &-bg {
+    padding: 20px 24px;
+  }
 }
 
 .item {
@@ -51,6 +59,18 @@
   transition:
     box-shadow 250ms ease,
     transform 250ms ease;
+
+  &:hover {
+    box-shadow:
+      0 1px 1px rgba(0, 0, 0, 0.12),
+      0 4px 4px rgba(0, 0, 0, 0.1),
+      0 4px 6px rgba(0, 0, 0, 0.08);
+    animation: portfolioAnim 0.5s forwards;
+
+    .overlay-text {
+      transform: translateY(0);
+    }
+  }
 }
 
 .overlay-box {
@@ -77,27 +97,6 @@
   transition: transform 250ms ease;
 }
 
-.item:hover .overlay-text {
-  transform: translateY(0);
-}
-
-.item:hover {
-  box-shadow:
-    0 1px 1px rgba(0, 0, 0, 0.12),
-    0 4px 4px rgba(0, 0, 0, 0.1),
-    0 4px 6px rgba(0, 0, 0, 0.08);
-}
-
-.portfolio-photo {
-  display: block;
-  width: 100%;
-  height: auto;
-}
-
-.portfolio-bg {
-  padding: 20px 24px;
-}
-
 .all-title {
   color: #212121;
   font-size: 18px;
@@ -116,104 +115,49 @@
   margin-top: 4px;
 }
 
-@media (min-width:480px) {
-   .item {
+@media (min-width: 480px) {
+  .item {
     width: 450px;
     height: 404px;
   }
 }
 
-@media (min-width:768px) {
-  .portfolio-spisok {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 30px;
-    justify-content: flex-start;
+@media (min-width: 768px) {
+  .portfolio {
+    &-spisok {
+      justify-content: flex-start;
+    }
+
+    &-photo {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    &-list {
+      justify-content: center;
+    }
   }
 
   .item {
     width: calc((100% - 30px) / 2);
-  }
-
-  .portfolio-photo {
-    width: 100%;
-    height: auto;
-    display: block;
-  }
-
-  .portfolio-list {
-    display: flex;
-    justify-content: center;
   }
 }
 
-@media (min-width:768px) {
-  .portfolio-spisok {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 30px;
-    justify-content: flex-start;
+@media (min-width: 1200px) {
+  .portfolio {
+    padding-top: 94px;
+    padding-bottom: 94px;
+
+    &-list {
+      align-items: center;
+      justify-content: center;
+    }
   }
 
-  .item {
-    width: calc((100% - 30px) / 2);
-  }
-
-  .portfolio-photo {
-    width: 100%;
-    height: auto;
-    display: block;
-  }
-
-  .portfolio-list {
-    display: flex;
-    justify-content: center;
-  }
-}
-
-@media (min-width:1200px) {
-  .portfolio-spisok {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 30px;
-    justify-content: flex-start;
-  }
-
-  .item {
-    width: calc((100% - 30px) / 2);
-  }
-
-  .portfolio-photo {
-    width: 100%;
-    height: auto;
-    display: block;
-  }
-
-  .portfolio-list {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  
   .item {
     width: calc((100% - 60px) / 3);
   }
-
-  .portfolio {
-      padding-top: 94px;
-      padding-bottom: 94px;
-    }
-
-}
-
-
-
-
-
-
-
-.item:hover {
-  animation: portfolioAnim 0.5s forwards;
 }
 
 @keyframes portfolioAnim {
