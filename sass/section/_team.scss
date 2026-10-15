@@ -29,7 +29,6 @@
     background-color: var(--only-color);
     padding-top: 30px;
     padding-bottom: 30px;
-
     box-shadow:
       0 2px 1px rgba(0, 0, 0, 0.12),
       0 1px 1px rgba(0, 0, 0, 0.14),
@@ -119,8 +118,10 @@
       display: flex;
     }
 
-    &-items:hover {
-      animation: team-card 0.5s forwards;
+    &-items {
+      &:hover {
+        animation: team-card 0.5s forwards;
+      }
     }
   }
 }

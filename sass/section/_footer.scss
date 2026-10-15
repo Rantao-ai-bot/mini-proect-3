@@ -55,8 +55,10 @@
     width: 100%;
     text-align: center;
 
-    &:first-child .footer-contact {
-      color: #fff;
+    &:first-child {
+      .footer-contact {
+        color: #fff;
+      }
     }
   }
 
