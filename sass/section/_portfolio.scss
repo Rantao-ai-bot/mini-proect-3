@@ -2,11 +2,25 @@
   padding-top: 60px;
   padding-bottom: 60px;
 
+  @media (min-width: 1200px) {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+
   &-list {
     display: flex;
     flex-wrap: wrap;
     gap: 8px;
     margin-bottom: 50px;
+
+    @media (min-width: 768px) {
+      justify-content: center;
+    }
+
+    @media (min-width: 1200px) {
+      align-items: center;
+      justify-content: center;
+    }
   }
 
   &-button {
@@ -38,42 +52,26 @@
     flex-wrap: wrap;
     gap: 30px;
     justify-content: center;
+
+    @media (min-width: 768px) {
+      justify-content: flex-start;
+    }
   }
 
   &-photo {
     display: block;
     width: 100%;
     height: auto;
-  }
 
-  &-bg {
-    padding: 20px 24px;
-  }
-
-  @media (min-width: 768px) {
-    &-spisok {
-      justify-content: flex-start;
-    }
-
-    &-photo {
+    @media (min-width: 768px) {
       width: 100%;
       height: auto;
       display: block;
     }
-
-    &-list {
-      justify-content: center;
-    }
   }
 
-  @media (min-width: 1200px) {
-    padding-top: 94px;
-    padding-bottom: 94px;
-
-    &-list {
-      align-items: center;
-      justify-content: center;
-    }
+  &-bg {
+    padding: 20px 24px;
   }
 }
 

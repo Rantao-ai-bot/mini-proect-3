@@ -3,11 +3,24 @@
   padding-bottom: 60px;
   background-color: var(--team-color);
 
+  @media (min-width: 1200px) {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+
   &-list {
     display: grid;
     grid-template-columns: 100%;
     gap: 30px;
     justify-items: center;
+
+    @media (min-width: 768px) {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    @media (min-width: 1200px) {
+      display: flex;
+    }
   }
 
   &-items {
@@ -22,6 +35,21 @@
       display: block;
       max-width: 100%;
       height: auto;
+    }
+
+    @media (min-width: 768px) {
+      min-width: 0;
+      width: 100%;
+
+      &:hover {
+        animation: none;
+      }
+    }
+
+    @media (min-width: 1200px) {
+      &:hover {
+        animation: team-card 0.5s forwards;
+      }
     }
   }
 
@@ -91,36 +119,6 @@
 
       .team-icon {
         fill: #fff;
-      }
-    }
-  }
-
-  @media (min-width: 768px) {
-    &-list {
-      grid-template-columns: repeat(2, minmax(0, 1fr));
-    }
-
-    &-items {
-      min-width: 0;
-      width: 100%;
-
-      &:hover {
-        animation: none;
-      }
-    }
-  }
-
-  @media (min-width: 1200px) {
-    padding-top: 94px;
-    padding-bottom: 94px;
-
-    &-list {
-      display: flex;
-    }
-
-    &-items {
-      &:hover {
-        animation: team-card 0.5s forwards;
       }
     }
   }
